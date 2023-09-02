@@ -48,9 +48,9 @@
     background: none;
     color: white;
     border: none;
-    font-weight: 500;
-    border: 2px solid white;
-    width: 136px;
+    /* font-weight: 500; */
+    border: 2px solid #c6133e;
+    width: 156px;
 }
 
 .nav-button.active {

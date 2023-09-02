@@ -1,9 +1,13 @@
 body {
   margin: 0;
-  font-family: 'Alegreya', serif;
+  /* font-family: 'Alegreya', serif; */
+  font-family: 'Inknut Antiqua', serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color: #222222;
   /* background-color: #e06556; */
+  /* background-color: #c6133e; */
+  background-color: #fff8e9;
 }
 
 /* code {
@@ -17,6 +21,7 @@ ul {
 }
 
 a {
+  font-family: 'Inknut Antiqua', serif;
   text-decoration: none;
   color: black;
   cursor: pointer;
@@ -26,24 +31,48 @@ a:hover {
   text-decoration: underline;
 }
 
+/* red color from maido: #c6133e
+black: #000000
+white: #ffffff
+
+orange scarlety from quintonil: #e06556
+
+dark brown from chipotle: #441500
+brick red from chipotle: #ac2318
+
+text color: #444444
+text color: black
+cream beige currently from SF: #fff8e9
+bright green from SF: #368c00
+orange highlight from SF: #ff8427
+gold from SF: #ffc800
+gray from squarespace template site (that also uses Inknut!): #38383b
+ */
+
 button {
   border: 2px solid black;
   color: white;
-  background-color: rgb(255, 250, 250);
-  color: #222222;
-  padding: 5px 10px;
+  /* background-color: rgb(255, 250, 250); */
+  background-color: #c6133e;
+  /* color: #222222; */
+  padding: 0px 10px;
   /* font-family: 'Playfair Display', serif; */
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   font-weight: bold;
   transition: 0.7s all;
+  font-family: 'Inknut Antiqua', serif;
 }
 
 button:hover {
   cursor: pointer;
   background-color: #222222;
+  /* background-color: #ffc800; */
+  /* color: black; */
   color: white;
+  /* color: #ffc800; */
 }
 
 .inknut {
   font-family: 'Inknut Antiqua', serif;
+  /* font-weight: lighter; */
 }

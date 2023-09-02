@@ -48,7 +48,7 @@ export default function Navigation() {
                     <img src={logo} className='small-logo' alt="Isaula's Logo" onClick={() => scrollToTop()} />
                 </div> */}
 
-                <div>
+                {/* <div>
                     Home
                 </div>
 
@@ -62,9 +62,9 @@ export default function Navigation() {
 
                 <div>
                     Contact
-                </div>
+                </div> */}
 
-                {/* <div>
+                <div>
                     <Link to='/'>
                         <button className={`nav-button ${location.pathname === '/' ? 'active' : ''}`}>
                             Glen Burnie
@@ -78,7 +78,7 @@ export default function Navigation() {
                             Annapolis
                         </button>
                     </Link>
-                </div> */}
+                </div>
 
                 {/* <li>
                     <button className='nav-button' onClick={() => scrollToSection('services')}>
