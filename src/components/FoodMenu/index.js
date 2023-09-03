@@ -6,7 +6,7 @@ export default function FoodMenu() {
     const sectionRefs = {};
 
     const renderMenuItem = (section, item) => (
-        <div key={item.name} className='menu-item' ref={(el) => (sectionRefs[section] = el)}>
+        <div key={item.name} className='menu-item'>
             <div className='item-name-and-price'>
                 <h2 className='item-name'>{item.name}</h2>
                 <h2 className='item-price'>{item.price}</h2>
@@ -30,7 +30,7 @@ export default function FoodMenu() {
         <div className='foodMenu'>
             <MenuNav sectionRefs={sectionRefs} />
             {Object.keys(menuEnglishData).map((section) => (
-                <div key={section} className='menu-section'>
+                <div key={section} className='menu-section' ref={(el) => (sectionRefs[section] = el)}>
                     <h2 className='section-header'>{section}</h2>
                     {menuEnglishData[section].map((item) => renderMenuItem(section, item))}
                 </div>

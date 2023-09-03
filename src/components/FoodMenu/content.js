@@ -1,11 +1,3 @@
-// export const englishContent = {
-
-// }
-
-// export const spanishContent = {
-
-// }
-
 export const menuEnglishData = {
     Appetizers: [
         {

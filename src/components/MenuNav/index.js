@@ -50,6 +50,7 @@ export default function MenuNav({ sectionRefs }) {
         const sectionElement = sectionRefs[section];
         if (sectionElement) {
             sectionElement.scrollIntoView({ behavior: 'smooth' });
+            // sectionElement.scrollIntoView({ behavior: 'smooth', block: 'start', inline: 'nearest' });
         }
     };
 
@@ -57,21 +58,21 @@ export default function MenuNav({ sectionRefs }) {
         <nav className='menu-nav'>
             <div className='menu-nav-options'>
                 <div>
-                    <button className='nav-button' onClick={() => scrollToSection('appetizers')}>
+                    <button className='menu-nav-button' onClick={() => scrollToSection('Appetizers')}>
                         Appetizers
                     </button>
                 </div>
 
                 <div>
-                    <button className='nav-button' onClick={() => scrollToSection('salads')}>
+                    <button className='menu-nav-button' onClick={() => scrollToSection('Salads')}>
                         Salads
                     </button>
                 </div>
 
                 <div>
                     <button
-                        className={`nav-button`}
-                        onClick={() => scrollToSection('entrees')}
+                        className='menu-nav-button'
+                        onClick={() => scrollToSection('Entrees')}
                     >
                         Entrees
                     </button>
@@ -79,8 +80,8 @@ export default function MenuNav({ sectionRefs }) {
 
                 <div>
                     <button
-                        className={`nav-button`}
-                        onClick={() => scrollToSection('desserts')}
+                        className='menu-nav-button'
+                        onClick={() => scrollToSection('Desserts')}
                     >
                         Desserts
                     </button>
