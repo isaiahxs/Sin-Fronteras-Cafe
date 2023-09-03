@@ -24,10 +24,15 @@
 
 .menu-nav.sticky {
     position: sticky;
+    /* top: 0px; */
     top: 92px;
     /* bottom: 10; */
     z-index: 10;
     background-color: rgba(0, 0, 0, 0.8);
+}
+
+.up {
+    /* top: 92px; */
 }
 
 .menu-nav-button {

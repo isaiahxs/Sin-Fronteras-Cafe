@@ -7,30 +7,29 @@ import './MenuNav.css'
 export default function MenuNav({ sectionRefs }) {
     // const { currentLanguage, setCurrentLanguage } = useLanguage();
     // const content = currentLanguage === 'english' ? englishContent : spanishContent;
-    // const [lastScrollPos, setLastScrollPos] = useState(0);
-    // const [isScrollingDown, setIsScrollingDown] = useState(false);
-    // const location = useLocation();
+    const [lastScrollPos, setLastScrollPos] = useState(0);
 
     const [isScrollingDown, setIsScrollingDown] = useState(false);
+    const [isScrollingUp, setIsScrollingUp] = useState(false);
     const location = useLocation();
 
-    // useEffect(() => {
-    //     const handleScroll = () => {
-    //         const currentScrollPos = window.pageYOffset;
+    useEffect(() => {
+        const handleScroll = () => {
+            const currentScrollPos = window.pageYOffset;
 
-    //         if (currentScrollPos > lastScrollPos) {
-    //             setIsScrollingDown(true);
-    //         } else {
-    //             setIsScrollingDown(false);
-    //         }
+            if (currentScrollPos < lastScrollPos) {
+                setIsScrollingUp(true);
+            } else {
+                setIsScrollingUp(false);
+            }
 
-    //         setLastScrollPos(currentScrollPos);
-    //     };
+            setLastScrollPos(currentScrollPos);
+        };
 
-    //     window.addEventListener('scroll', handleScroll);
+        window.addEventListener('scroll', handleScroll);
 
-    //     return () => window.removeEventListener('scroll', handleScroll);
-    // }, [lastScrollPos]);
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, [lastScrollPos]);
 
     useEffect(() => {
         const menuSection = document.getElementById('menu');
@@ -58,12 +57,18 @@ export default function MenuNav({ sectionRefs }) {
     }, []);
 
     // const navBarClass = isScrollingDown ? 'nav-bar hidden' : 'nav-bar';
-    const navBarClass = isScrollingDown ? 'menu-nav sticky' : 'menu-nav';
+    const navBarClass = isScrollingDown ? 'menu-nav sticky' : 'menu-nav up';
+
+    // const navBarClassUp = isScrollingUp ? 'menu-nav sticky up' : 'menu-nav';
 
     const scrollToSection = (section) => {
         const sectionElement = sectionRefs[section];
         if (sectionElement) {
-            sectionElement.scrollIntoView({ behavior: 'smooth' });
+            // sectionElement.scrollIntoView({ behavior: 'smooth' });
+
+            const yOffset = -170;
+            const topOffset = sectionElement.getBoundingClientRect().top + window.scrollY + yOffset;
+            window.scrollTo({ top: topOffset, behavior: 'smooth' });
         }
     };
 
