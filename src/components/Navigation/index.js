@@ -43,7 +43,10 @@ export default function Navigation() {
         if (sectionId === 'footer') {
             sectionElement.scrollIntoView({ behavior: 'smooth', block: 'end' });
         } else {
-            sectionElement.scrollIntoView({ behavior: 'smooth' });
+            const yOffset = -90;
+            const topOffset = sectionElement.getBoundingClientRect().top + window.scrollY + yOffset;
+            window.scrollTo({ top: topOffset, behavior: 'smooth' });
+            // sectionElement.scrollIntoView({ behavior: 'smooth' });
         }
     };
 
