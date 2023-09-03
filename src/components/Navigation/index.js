@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { useLanguage } from '../../LanguageContext';
 import { englishContent, spanishContent } from './content';
 import { Link, useLocation } from 'react-router-dom';
-// import logo from '../../../assets/icons/scissors-comb-white.png';
+import logo from '../../assets/icons/red-logo-margarita.png';
 import './Navigation.css'
 
 export default function Navigation() {
@@ -44,9 +44,9 @@ export default function Navigation() {
     return (
         <nav className={navBarClass}>
             <div className='nav-options'>
-                {/* <div className='nav-logo-container'>
+                <div className='nav-logo-container'>
                     <img src={logo} className='small-logo' alt="Isaula's Logo" onClick={() => scrollToTop()} />
-                </div> */}
+                </div>
 
                 {/* <div>
                     Home

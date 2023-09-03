@@ -1,7 +1,7 @@
 import { useLanguage } from '../../LanguageContext';
 import { englishContent, spanishContent } from './content';
 import { Link } from 'react-router-dom';
-// import logo from '../../assets/icons/scissors-comb-white.png';
+import logo from '../../assets/icons/red-logo-margarita.png';
 import map_pin from '../../assets/icons/map-pin.svg';
 import phone from '../../assets/icons/phone-icon.svg';
 // import email from '../../assets/icons/mail-icon.svg';
@@ -31,9 +31,9 @@ export default function Footer() {
         <footer className='footer-container'>
             <div className='footer-section'>
                 <section className='logo-section'>
-                    {/* <Link to='/'> */}
-                    {/* <img src={logo} className='big-logo' alt="Big Isaula's Logo" onClick={() => scrollToTop()} /> */}
-                    {/* </Link> */}
+                    <Link to='/'>
+                        <img src={logo} className='big-logo' alt="Big Isaula's Logo" onClick={() => scrollToTop()} />
+                    </Link>
                 </section>
 
                 <section className='second-footer-section'>

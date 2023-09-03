@@ -66,13 +66,20 @@ button {
   /* font-family: 'Vollkorn SC', serif; */
 }
 
+/* <div> Icons made by <a href="https://www.freepik.com" title="Freepik"> Freepik </a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com'</a></div> */
+
 button:hover {
+  color: #222222;
+  background-color: #ffc800;
+  /* border: 2px solid black; */
   cursor: pointer;
-  background-color: #222222;
+
+  /* color: white; */
+  /* background-color: #222222; */
+
   /* background-color: #c6133e; */
   /* background-color: #ffc800; */
   /* color: black; */
-  color: white;
   /* color: #ffc800; */
 }
 
