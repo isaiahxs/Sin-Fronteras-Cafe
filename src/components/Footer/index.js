@@ -32,18 +32,18 @@ export default function Footer() {
             <div className='footer-section'>
                 <section className='logo-section'>
                     <Link to='/'>
-                        <img src={logo} className='big-logo' alt="Big Isaula's Logo" onClick={() => scrollToTop()} />
+                        <img src={logo} className='big-logo' alt="Big Sin Fronteras Logo" onClick={() => scrollToTop()} />
                     </Link>
                 </section>
 
                 <section className='second-footer-section'>
                     <ul className='footer-options-container'>
                         <li className='footer-heading'>
-                            Annapolis
+                            Sin Fronteras
                         </li>
                         <div className='footer-options'>
                             <li>
-                                <a href="https://www.google.com/maps/place/Isaula's+Beauty+Salon+LLC/@39.1592102,-76.6207809,15z/data=!4m6!3m5!1s0x89b7fcdd79a6aeed:0xa55be85257c1581f!8m2!3d39.1592102!4d-76.6207809!16s%2Fg%2F1v8l0hr7?entry=ttu" target='_blank' rel='noopener noreferrer'>
+                                <a href="https://www.google.com/maps/place/Sin+Fronteras/@38.9775203,-76.5394309,17z/data=!3m1!4b1!4m6!3m5!1s0x89b7f6ce8f43a82f:0x43022ee12cca4c62!8m2!3d38.9775162!4d-76.536856!16s%2Fg%2F1tpf80bs?entry=ttu" target='_blank' rel='noopener noreferrer'>
                                     <div className='footer-icon-container'>
                                         <img src={map_pin} className='footer-icon GB-map-icon' alt='Map Pin Icon' />
                                         <p className='footer-icon-description'>
