@@ -1,28 +1,38 @@
+import MenuNav from '../MenuNav';
 import { menuEnglishData } from './content';
 import './FoodMenu.css';
 
 export default function FoodMenu() {
-    const renderMenuItem = (item) => (
-        <div key={item.name} className='menu-item'>
-            <h2 className='item-name'>{item.name}</h2>
-            <h2 className='item-price'>{item.price}</h2>
+    const sectionRefs = {};
+
+    const renderMenuItem = (section, item) => (
+        <div key={item.name} className='menu-item' ref={(el) => (sectionRefs[section] = el)}>
+            <div className='item-name-and-price'>
+                <h2 className='item-name'>{item.name}</h2>
+                <h2 className='item-price'>{item.price}</h2>
+            </div>
             <h3 className='item-description'>{item.description}</h3>
             {item.options && item.options.length > 0 && (
                 <div className='item-options'>
+                    Options:
                     {item.options.map((option) => (
-                        <span key={option} className='option'>{option}</span>
+                        <span key={option} className='option'> {option}</span>
                     ))}
                 </div>
             )}
         </div>
     );
 
+    console.log('sectionRefs:', sectionRefs);
+
+
     return (
-        <div>
+        <div className='foodMenu'>
+            <MenuNav sectionRefs={sectionRefs} />
             {Object.keys(menuEnglishData).map((section) => (
                 <div key={section} className='menu-section'>
-                    {section}
-                    {menuEnglishData[section].map((item) => renderMenuItem(item))}
+                    <h2 className='section-header'>{section}</h2>
+                    {menuEnglishData[section].map((item) => renderMenuItem(section, item))}
                 </div>
             ))}
             <div>Gluten Free</div>

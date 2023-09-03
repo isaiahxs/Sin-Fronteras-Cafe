@@ -2,10 +2,9 @@ import React, { useState, useEffect, useRef } from 'react';
 import { useLanguage } from '../../LanguageContext';
 import { englishContent, spanishContent } from './content';
 import { Link, useLocation } from 'react-router-dom';
-import logo from '../../assets/icons/red-logo-margarita.png';
-import './Navigation.css'
+import './MenuNav.css'
 
-export default function Navigation() {
+export default function MenuNav({ sectionRefs }) {
     const { currentLanguage, setCurrentLanguage } = useLanguage();
     const content = currentLanguage === 'english' ? englishContent : spanishContent;
     const [lastScrollPos, setLastScrollPos] = useState(0);
@@ -32,49 +31,58 @@ export default function Navigation() {
 
     const navBarClass = isScrollingDown ? 'nav-bar hidden' : 'nav-bar';
 
-    // const scrollToSection = (sectionId) => {
-    //     const sectionElement = document.getElementById(sectionId);
+    // const scrollToSection = (sectionText) => {
+    //     const sectionElement = document.getElementByText(sectionText);
     //     sectionElement.scrollIntoView({ behavior: 'smooth' });
     // };
 
-    const scrollToSection = (sectionId) => {
-        const sectionElement = document.getElementById(sectionId);
-        if (sectionId === 'footer') {
-            sectionElement.scrollIntoView({ behavior: 'smooth', block: 'end' });
-        } else {
+    console.log('sectionRefs in MenuNav:', sectionRefs);
+
+
+    // const scrollToSection = (sectionText) => {
+    //     const sectionElement = sectionRefs[sectionText];
+    //     if (sectionElement) {
+    //         sectionElement.scrollIntoView({ behavior: 'smooth' });
+    //     }
+    // };
+
+    const scrollToSection = (section) => {
+        const sectionElement = sectionRefs[section];
+        if (sectionElement) {
             sectionElement.scrollIntoView({ behavior: 'smooth' });
         }
     };
 
-    const scrollToTop = () => {
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-    };
-
     return (
-        <nav className={navBarClass}>
-            <div className='nav-options'>
-                <div className='nav-logo-container'>
-                    <img src={logo} className='small-logo' alt="Sin Fronteras Logo" onClick={() => scrollToTop()} />
-                </div>
-
+        <nav className='menu-nav'>
+            <div className='menu-nav-options'>
                 <div>
-                    <button className='nav-button' onClick={() => scrollToSection('menu')}>
-                        Menu
+                    <button className='nav-button' onClick={() => scrollToSection('appetizers')}>
+                        Appetizers
                     </button>
                 </div>
 
                 <div>
-                    <button className='nav-button' onClick={() => scrollToSection('reviews')}>
-                        Reviews
+                    <button className='nav-button' onClick={() => scrollToSection('salads')}>
+                        Salads
                     </button>
                 </div>
 
                 <div>
                     <button
                         className={`nav-button`}
-                        onClick={() => scrollToSection('footer')}
+                        onClick={() => scrollToSection('entrees')}
                     >
-                        Contact
+                        Entrees
+                    </button>
+                </div>
+
+                <div>
+                    <button
+                        className={`nav-button`}
+                        onClick={() => scrollToSection('desserts')}
+                    >
+                        Desserts
                     </button>
                 </div>
             </div>

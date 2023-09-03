@@ -94,6 +94,8 @@
     align-items: center;
     text-align: center;
     padding: 10px;
+    max-width: 800px;
+    margin: auto;
     /* background-color: white; */
     /* border: 2px solid black; */
     /* margin: 20px; */

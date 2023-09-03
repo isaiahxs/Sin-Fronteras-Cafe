@@ -56,6 +56,17 @@ export default function Hero() {
                             {content.description2}
                         </h3>
 
+                        <h3 className='contact-information'>
+                            <div className='hero-address'>
+                                {/* <img src={map_pin} className='footer-icon' alt='Map Pin' /> */}
+                                2129 Forest Dr. Annapolis, MD 21401
+                            </div>
+                            <div className='hero-phone'>
+                                {/* <img src={phone} className='footer-icon' alt='Phone Icon' /> */}
+                                (410) 266-0013
+                            </div>
+                        </h3>
+
                         <h3 className='description description-hours urbanist'>
                             {content.hours}
                         </h3>

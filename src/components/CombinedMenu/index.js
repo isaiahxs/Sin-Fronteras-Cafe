@@ -5,7 +5,7 @@ import './CombinedMenu.css';
 export default function CombinedMenu() {
     return (
         <div id='menu'>
-            <div className='menu-section'>
+            <div className='menu-container'>
                 <FoodMenu />
                 <DrinksMenu />
             </div>

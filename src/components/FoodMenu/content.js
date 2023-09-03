@@ -7,27 +7,27 @@
 // }
 
 export const menuEnglishData = {
-    appetizers: [
+    Appetizers: [
         {
             name: "Guacamole",
             price: "$10.99",
             description: `A generous serving of fresh homemade guacamole with fresh cilantro, tomato, onion, and jalapeños. Served with a warm corn tortilla chip.
             `,
-            options: ["No Spicy", "Med Spicy", "Spicy"]
+            options: ["No Spicy - ", "Med Spicy - ", "Spicy"]
         },
         {
             name: "Nachos Sin Fronteras",
             price: "$10.99",
             description: `Corn tortilla chips piled high and topped off with refried beans, pico de gallo, lettuce, fresh jalapeños, sour cream guacamole sauce, and your choice of beef chorizo or chicken.
             `,
-            options: ["Chicken", "Beef", "Chorizo", "Pork Carnitas"]
+            options: ["Chicken - ", "Beef - ", "Chorizo - ", "Pork Carnitas"]
         },
         {
             name: "Quesadilla",
             price: "$11.99",
             description: `1 Large flour tortilla stuffed with cheese and your choice of chicken, chorizo, carnitas, or beef.
             `,
-            options: ["Chicken", "Beef", "Chorizo", "Pork Carnitas"]
+            options: ["Chicken - ", "Beef - ", "Chorizo - ", "Pork Carnitas"]
         },
         {
             name: "Chile con Queso",
@@ -41,7 +41,7 @@ export const menuEnglishData = {
             price: "$11.99",
             description: `Fried or steamed yucca with fried chicharron (fried pork). Served with fresh cabbage and topped with our sweet cream sauce.
         `,
-            options: ["Fried", "Steamed"]
+            options: ["Fried - ", "Steamed"]
         },
         {
             name: "Camarones al Ajillo (Garlic Shrimp)",
@@ -55,14 +55,14 @@ export const menuEnglishData = {
             price: "$11.99",
             description: `Lightly breaded calamari, available grilled or fried, and served with our famous tomatillo sauce and lime.
         `,
-            options: ["Grilled", "Fried"]
+            options: ["Grilled - ", "Fried"]
         },
         {
             name: `3 Soft Tacos`,
             price: "$11.99",
             description: `Soft corn tortilla filled with your choice of chicken, beef, carnitas, chorizo, shrimp, or beef Barbacoa, served with pico de gallo.
         `,
-            options: ["Beef", "Chicken", "Chorizo", "Pork Carnitas"]
+            options: ["Beef - ", "Chicken - ", "Chorizo - ", "Pork Carnitas"]
         },
         {
             name: "Salsa & Chips",
@@ -86,7 +86,7 @@ export const menuEnglishData = {
             options: []
         },
     ],
-    salads: [
+    Salads: [
         {
             name: `Acapulco Salad`,
             price: "$19.99",
@@ -99,43 +99,43 @@ export const menuEnglishData = {
             price: "$15.99",
             description: `Fresh garden greens, grilled vegetables, beans, pico de gallo, and avocado with your choice of shrimp, tilapia, chicken or beef.
         `,
-            options: ["Chicken Fajita", "Beef Fajita", "File of Tilapia", "Shrimp"]
+            options: ["Chicken Fajita - ", "Beef Fajita - ", "Filet of Tilapia - ", "Shrimp"]
         },
         {
             name: `Taco Salad`,
             price: "$14.99",
             description: `A 12" crispy tortilla shell filled with lettuce, tomato, onion, black beans, fresh grated cheese, and with your choice of chicken, beef, shrimp, or vegetarian. With our homemade dressing, sour cream, and guacamole sauce on the side.
         `,
-            options: ["Beef", "Chicken", "Shrimp", "Vegetarian", "Pork Carnitas"]
+            options: ["Beef - ", "Chicken - ", "Shrimp - ", "Vegetarian - ", "Pork Carnitas"]
         },
     ],
-    entrees: [
+    Entrees: [
         {
             name: `Baleada (2)`,
             price: "$11.99",
             description: `A Honduran specialty. Two tortillas, stuffed with refried beans, fresh grated cheese, avocado, and imported Honduras cream. Choice of carne asada (steak) or chorizo with egg.`,
-            options: ["Beef", "Chorizo with Egg"]
+            options: ["Beef - ", "Chorizo with Egg"]
         },
         {
             name: `Burrito`,
             price: "$11.99",
             description: `A large flour tortilla stuffed with rice, beans, cheese, chipotle, with your choice of chicken, chorizo, carnitas, beef or vegetarian, and topped with guacamole sauce and sour cream.
             `,
-            options: ["Beef", "Chorizo", "Pork Carnitas", "Chorizo", "Vegetarian"]
+            options: ["Beef - ", "Chorizo - ", "Pork Carnitas - ", "Vegetarian"]
         },
         {
             name: `Chimichanga`,
             price: "$11.99",
             description: `Our burrito fried and your choice of chicken chorizo, carnitas, beef or vegetarian, and topped with sour cream and guacamole sauce.
             `,
-            options: ["Beef", "Chicken", "Pork Carnitas", "Chorizo", "Vegetarian"]
+            options: ["Beef - ", "Chicken - ", "Pork Carnitas - ", "Chorizo - ", "Vegetarian"]
         },
         {
             name: `Cuban Sandwich`,
             price: "$10.99",
             description: `Miami style pork, ham, Swiss cheese, dill pickles, and mustard. Served with your choice of French fries, fried sweet plantains, yucca or a small salad.
             `,
-            options: ["French Fries", "Yucca", "Sweet Plantains", "Small Salad"]
+            options: ["French Fries - ", "Yucca - ", "Sweet Plantains - ", "Small Salad"]
         },
         {
             name: `Pollo Tropical`,
@@ -163,7 +163,7 @@ export const menuEnglishData = {
             price: "$14.99",
             description: `Three soft, hand-rolled tortillas filled with your choice of chicken, chorizo, carnitas beef or vegetarian. Served with casamiento.
             `,
-            options: ["Mole Sauce", "Tomatillo Sauce", "Carnitas", "Beef", "Chicken", "Chorizo", "Vegetarian"]
+            options: ["Mole Sauce - ", "Tomatillo Sauce - ", "Carnitas - ", "Beef - ", "Chicken - ", "Chorizo - ", "Vegetarian"]
         },
         {
             name: `Chicharron en Salsa Verde`,
@@ -177,21 +177,21 @@ export const menuEnglishData = {
             price: "$19.99",
             description: `A toasty poblano pepper filled with cheese, tomatillo sauce and your choice of chicken or vegetarian. Served with casamiento.
             `,
-            options: ["Chicken", "Vegetarian"]
+            options: ["Chicken - ", "Vegetarian"]
         },
         {
             name: `Fajitas`,
             price: "$20.99",
             description: `Sautéed onions and peppers, served with casamiento, flour tortillas and your choice of chicken, beef or shrimp. (Additional cost for proteins).
             `,
-            options: ["Beef", "Chicken", "Shrimp", "Shrimp Chicken Beef +$2", "Beef and Chicken +$2"]
+            options: ["Beef - ", "Chicken - ", "Shrimp - ", "Shrimp Chicken Beef +$2 - ", "Beef and Chicken +$2"]
         },
         {
             name: `Peruvian Lomo Saltado`,
             price: "$19.99",
             description: `A slice of tender beef steak, cooked with olive oil, a soy sauce white wine Aji, pepper, tomato, and onion. Served over French fries or Yucca. Comes with a side of rice.
             `,
-            options: ["French Fries", "Yuca"]
+            options: ["French Fries - ", "Yuca"]
         },
         {
             name: `Ropa Vieja`,
@@ -240,7 +240,7 @@ export const menuEnglishData = {
             price: "$20.99",
             description: `A fillet of tuna encrusted with Peruvian spices on top of garlic chipotle mashed potatoes and served with julienne vegetables sautéed with El Maestro tequila, soy sauce, fresh ginger and a touch of red roasted wasabi sauce.
             `,
-            options: ["Meduium, Medium Rare, Rare"]
+            options: ["Meduium - ", "Medium Rare - ", "Rare"]
         },
         {
             name: `Tilapia Caribbean Style`,
@@ -264,7 +264,7 @@ export const menuEnglishData = {
             options: []
         },
     ],
-    desserts: [
+    Desserts: [
         {
             name: `Flan Latino`,
             price: "$5.99",
