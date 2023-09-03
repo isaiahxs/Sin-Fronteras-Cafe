@@ -67,17 +67,33 @@ export default function Navigation() {
                 <div>
                     <Link to='/'>
                         <button className={`nav-button ${location.pathname === '/' ? 'active' : ''}`}>
-                            Glen Burnie
+                            Home
                         </button>
                     </Link>
                 </div>
 
                 <div>
-                    <Link to='/annapolis'>
-                        <button className={`nav-button ${location.pathname === '/annapolis' ? 'active' : ''}`}>
-                            Annapolis
-                        </button>
-                    </Link>
+                    {/* <Link to='/annapolis'> */}
+                    <button className={`nav-button ${location.pathname === '/annapolis' ? 'active' : ''}`}>
+                        Menu
+                    </button>
+                    {/* </Link> */}
+                </div>
+
+                <div>
+                    {/* <Link to='/annapolis'> */}
+                    <button className={`nav-button ${location.pathname === '/annapolis' ? 'active' : ''}`}>
+                        About
+                    </button>
+                    {/* </Link> */}
+                </div>
+
+                <div>
+                    {/* <Link to='/annapolis'> */}
+                    <button className={`nav-button ${location.pathname === '/annapolis' ? 'active' : ''}`}>
+                        Contact
+                    </button>
+                    {/* </Link> */}
                 </div>
 
                 {/* <li>

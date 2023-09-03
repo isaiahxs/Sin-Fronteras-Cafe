@@ -33,18 +33,24 @@ export default function Hero() {
                     <div className='hero-text-section'>
                         <h1 className='title'>{content.title}</h1>
                         <h2 className='location'>{content.location}</h2>
+                        {/* <button className='language-toggle-button' onClick={toggleLanguage}>
+                            {currentLanguage === 'english' ? 'Español' : 'English'}
+                        </button> */}
                     </div>
                 </div>
 
                 <div className='section-below-hero'>
-                    <button className='language-toggle-button' onClick={toggleLanguage}>
+                    {/* <button className='language-toggle-button' onClick={toggleLanguage}>
                         {currentLanguage === 'english' ? 'Español' : 'English'}
-                    </button>
+                    </button> */}
 
                     <div className='hero-descriptions-container'>
-                        <h3 className='description urbanist'>
+                        <h3 className='description welcome urbanist'>
                             {content.description}
                         </h3>
+                        <button className='language-toggle-button' onClick={toggleLanguage}>
+                            {currentLanguage === 'english' ? 'Español' : 'English'}
+                        </button>
 
                         <h3 className='description description-2 urbanist'>
                             {content.description2}

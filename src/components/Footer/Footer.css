@@ -1,6 +1,7 @@
 .footer-container {
     width: 100%;
-    background-color: #222222;
+    /* background-color: #222222; */
+    background-color: black;
     /* background-color: #38383b; */
 }
 
@@ -27,7 +28,8 @@
 .footer-section li {}
 
 .footer-heading {
-    font-size: 1.7rem;
+    font-family: 'Vollkorn SC', serif;
+    font-size: 1.9rem;
     margin-bottom: 5px;
     text-align: center;
 }
@@ -62,7 +64,7 @@
 
 .footer-icon-container {
     display: flex;
-    /* align-items: center; */
+    align-items: center;
     margin-bottom: 8px;
 }
 
@@ -87,7 +89,7 @@
     justify-content: center;
     color: white;
     padding-bottom: 20px;
-    font-size: 1.2rem;
+    /* font-size: 1.0rem; */
     margin-left: 10px;
     margin-right: 10px;
     text-align: center;
@@ -95,15 +97,15 @@
 }
 
 .credits-created-by {
-    margin-bottom: 5px;
+    margin-bottom: 0px;
     margin-top: 5px;
-    font-size: 1.3rem;
+    font-size: 1.0rem;
 }
 
 .isaiah {
     color: white;
     margin-left: 5px;
-    font-size: 1.3rem;
+    font-size: 1.0rem;
 }
 
 .isaiah:hover {
@@ -128,6 +130,7 @@
     .footer-options-container {
         margin-top: 10px;
         margin-bottom: 0px;
+        margin-right: 0px;
     }
 
     .footer-options {
@@ -145,6 +148,10 @@
 
     .credits-container {
         flex-direction: column;
+    }
+
+    .isaiah {
+        margin-left: 0px;
     }
 }
 

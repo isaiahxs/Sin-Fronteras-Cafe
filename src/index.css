@@ -51,21 +51,25 @@ gray from squarespace template site (that also uses Inknut!): #38383b
 
 button {
   border: 2px solid black;
-  color: white;
-  /* background-color: rgb(255, 250, 250); */
+  /* border: 2px solid #c6133e; */
+  /* background-color: #fff8e9; */
+
   background-color: #c6133e;
-  /* color: #222222; */
+  color: #222222;
+  color: white;
+
   padding: 0px 10px;
-  /* font-family: 'Playfair Display', serif; */
   font-size: 1.2rem;
   font-weight: bold;
   transition: 0.7s all;
   font-family: 'Inknut Antiqua', serif;
+  /* font-family: 'Vollkorn SC', serif; */
 }
 
 button:hover {
   cursor: pointer;
   background-color: #222222;
+  /* background-color: #c6133e; */
   /* background-color: #ffc800; */
   /* color: black; */
   color: white;
