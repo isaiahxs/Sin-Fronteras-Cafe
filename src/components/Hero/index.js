@@ -23,7 +23,7 @@ export default function Hero() {
     };
 
     return (
-        <header className='hero-container'>
+        <header className='hero-container' id='hero'>
             <div className='hero-section'>
                 <div className='hero-information'>
                     {/* <button className='language-toggle-button' onClick={toggleLanguage}>
@@ -45,9 +45,9 @@ export default function Hero() {
                     </button> */}
 
                     <div className='hero-descriptions-container'>
-                        <h3 className='description welcome urbanist'>
+                        {/* <h3 className='description welcome urbanist'>
                             {content.description}
-                        </h3>
+                        </h3> */}
                         <button className='language-toggle-button' onClick={toggleLanguage}>
                             {currentLanguage === 'english' ? 'Español' : 'English'}
                         </button>
@@ -66,7 +66,7 @@ export default function Hero() {
                     </div>
 
                     <div className='hero-buttons-container'>
-                        <button className='view-services-hero' onClick={() => scrollToSection('services')}>
+                        <button className='view-services-hero' onClick={() => scrollToSection('menu')}>
                             {content.viewServices}
                         </button>
 

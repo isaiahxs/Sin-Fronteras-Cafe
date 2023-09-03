@@ -28,7 +28,7 @@ export default function Footer() {
     };
 
     return (
-        <footer className='footer-container'>
+        <footer className='footer-container' id='footer' >
             <div className='footer-section'>
                 <section className='logo-section'>
                     <Link to='/'>

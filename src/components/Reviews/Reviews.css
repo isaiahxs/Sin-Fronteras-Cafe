@@ -14,6 +14,7 @@
 }
 
 .home-header {
+    font-family: 'Vollkorn SC', serif;
     font-size: 2.2rem;
 }
 
@@ -47,7 +48,7 @@
     border: 2px solid black;
     transition: 0.7s all;
     text-decoration: none !important;
-    height: 320px;
+    height: 325px;
     /* 368c00 */
     /* ffc800 */
 }

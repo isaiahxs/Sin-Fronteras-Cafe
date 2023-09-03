@@ -8,7 +8,7 @@ export default function Reviews() {
     const content = currentLanguage === 'english' ? englishContent : spanishContent;
 
     return (
-        <div className='testimonials-section'>
+        <div className='testimonials-section' id='reviews'>
             <div className='home-header-container testimonials-header-container'>
                 <h2 className='home-header testimonials-header'>{content.testimonialsHeader}</h2>
                 <a href="https://www.google.com/search?q=Sin+Fronteras+Cafe%2C+Annapolis+MD&sca_esv=562253820&rlz=1C1CHBF_enUS720US720&sxsrf=AB5stBi9daaIEpwg-kweVvniBPFj-Gk-Hg%3A1693701433901&ei=OdXzZLDUNoKawbkP1K2OgAQ&ved=0ahUKEwjw1MrCmY2BAxUCTTABHdSWA0AQ4dUDCBA&uact=5&oq=Sin+Fronteras+Cafe%2C+Annapolis+MD&gs_lp=Egxnd3Mtd2l6LXNlcnAiIFNpbiBGcm9udGVyYXMgQ2FmZSwgQW5uYXBvbGlzIE1EMgYQABgWGB5I00JQPViKQHAAeAGQAQGYAaMEoAHyEqoBCTEuNC40LTMuMbgBA8gBAPgBAcICBBAjGCfiAwQYACBBiAYB&sclient=gws-wiz-serp#lrd=0x89b7f6ce8f43a82f:0x43022ee12cca4c62,1,,,," target='_blank' rel='noopener noreferrer'>

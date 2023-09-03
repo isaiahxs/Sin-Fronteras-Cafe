@@ -14,13 +14,13 @@ export default function HomePage() {
         <div>
             <Navigation />
 
-            <Hero id='hero' />
+            <Hero />
 
-            <CombinedMenu id='combined-menu' />
+            <CombinedMenu />
 
-            <Reviews id='reviews' />
+            <Reviews />
 
-            <Footer id='footer' />
+            <Footer />
         </div>
     )
 }
