@@ -5,57 +5,70 @@ import { Link, useLocation } from 'react-router-dom';
 import './MenuNav.css'
 
 export default function MenuNav({ sectionRefs }) {
-    const { currentLanguage, setCurrentLanguage } = useLanguage();
-    const content = currentLanguage === 'english' ? englishContent : spanishContent;
-    const [lastScrollPos, setLastScrollPos] = useState(0);
+    // const { currentLanguage, setCurrentLanguage } = useLanguage();
+    // const content = currentLanguage === 'english' ? englishContent : spanishContent;
+    // const [lastScrollPos, setLastScrollPos] = useState(0);
+    // const [isScrollingDown, setIsScrollingDown] = useState(false);
+    // const location = useLocation();
+
     const [isScrollingDown, setIsScrollingDown] = useState(false);
     const location = useLocation();
 
+    // useEffect(() => {
+    //     const handleScroll = () => {
+    //         const currentScrollPos = window.pageYOffset;
+
+    //         if (currentScrollPos > lastScrollPos) {
+    //             setIsScrollingDown(true);
+    //         } else {
+    //             setIsScrollingDown(false);
+    //         }
+
+    //         setLastScrollPos(currentScrollPos);
+    //     };
+
+    //     window.addEventListener('scroll', handleScroll);
+
+    //     return () => window.removeEventListener('scroll', handleScroll);
+    // }, [lastScrollPos]);
+
     useEffect(() => {
-        const handleScroll = () => {
-            const currentScrollPos = window.pageYOffset;
+        const menuSection = document.getElementById('menu');
+        const observer = new IntersectionObserver(
+            (entries) => {
+                const entry = entries[0];
+                if (entry.isIntersecting) {
+                    setIsScrollingDown(true);
+                } else {
+                    setIsScrollingDown(false);
+                }
+            },
+            { threshold: [0] } // Trigger when at least 1 pixel is visible
+        );
 
-            if (currentScrollPos > lastScrollPos) {
-                setIsScrollingDown(true);
-            } else {
-                setIsScrollingDown(false);
+        if (menuSection) {
+            observer.observe(menuSection);
+        }
+
+        return () => {
+            if (menuSection) {
+                observer.unobserve(menuSection);
             }
-
-            setLastScrollPos(currentScrollPos);
         };
+    }, []);
 
-        window.addEventListener('scroll', handleScroll);
-
-        return () => window.removeEventListener('scroll', handleScroll);
-    }, [lastScrollPos]);
-
-    const navBarClass = isScrollingDown ? 'nav-bar hidden' : 'nav-bar';
-
-    // const scrollToSection = (sectionText) => {
-    //     const sectionElement = document.getElementByText(sectionText);
-    //     sectionElement.scrollIntoView({ behavior: 'smooth' });
-    // };
-
-    console.log('sectionRefs in MenuNav:', sectionRefs);
-
-
-    // const scrollToSection = (sectionText) => {
-    //     const sectionElement = sectionRefs[sectionText];
-    //     if (sectionElement) {
-    //         sectionElement.scrollIntoView({ behavior: 'smooth' });
-    //     }
-    // };
+    // const navBarClass = isScrollingDown ? 'nav-bar hidden' : 'nav-bar';
+    const navBarClass = isScrollingDown ? 'menu-nav sticky' : 'menu-nav';
 
     const scrollToSection = (section) => {
         const sectionElement = sectionRefs[section];
         if (sectionElement) {
             sectionElement.scrollIntoView({ behavior: 'smooth' });
-            // sectionElement.scrollIntoView({ behavior: 'smooth', block: 'start', inline: 'nearest' });
         }
     };
 
     return (
-        <nav className='menu-nav'>
+        <nav className={navBarClass}>
             <div className='menu-nav-options'>
                 <div>
                     <button className='menu-nav-button' onClick={() => scrollToSection('Appetizers')}>

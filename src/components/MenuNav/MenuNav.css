@@ -1,0 +1,41 @@
+/* .menu-nav {
+    width: 100%;
+    background-color: black;
+    padding: 10px 0px;
+}
+
+.menu-nav-button {
+    font-size: 1.0rem;
+}
+
+.menu-nav-options {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+} */
+
+.menu-nav {
+    width: 100%;
+    background-color: black;
+    padding: 10px 0px;
+    transition: background-color 0.3s ease-in-out;
+    z-index: 10;
+}
+
+.menu-nav.sticky {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.menu-nav-button {
+    font-size: 1.0rem;
+}
+
+.menu-nav-options {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    /* max-width: 700px; */
+}

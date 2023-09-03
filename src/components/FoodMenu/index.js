@@ -23,7 +23,7 @@ export default function FoodMenu() {
         </div>
     );
 
-    console.log('sectionRefs:', sectionRefs);
+    // console.log('sectionRefs:', sectionRefs);
 
 
     return (
