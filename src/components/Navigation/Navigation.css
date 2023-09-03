@@ -9,7 +9,7 @@
     background-color: black;
     transition: transform 0.7s ease;
     position: fixed;
-    z-index: 10;
+    z-index: 15;
 }
 
 .nav-bar button {

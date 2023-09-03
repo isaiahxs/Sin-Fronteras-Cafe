@@ -30,7 +30,7 @@ export default function Navigation() {
         return () => window.removeEventListener('scroll', handleScroll);
     }, [lastScrollPos]);
 
-    const navBarClass = isScrollingDown ? 'nav-bar hidden' : 'nav-bar';
+    const navBarClass = isScrollingDown ? 'nav-bar' : 'nav-bar';
 
     // const scrollToSection = (sectionId) => {
     //     const sectionElement = document.getElementById(sectionId);
