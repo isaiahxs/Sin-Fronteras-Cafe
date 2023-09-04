@@ -24,6 +24,12 @@
     width: 260px;
 }
 
+.logo-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .second-footer-section {
     width: 360px;
 }
