@@ -1,4 +1,4 @@
-import DrinksMenuNav from '../FoodMenuNav';
+import DrinksMenuNav from '../DrinksMenuNav';
 import { menuDrinksEnglishData } from './content';
 import './DrinksMenu.css';
 
