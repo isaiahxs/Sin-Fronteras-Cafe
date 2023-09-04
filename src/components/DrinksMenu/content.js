@@ -149,7 +149,7 @@ export const menuDrinksEnglishData = {
             options: ["On the Rocks - ", "Frozen - ", "With Salt Rim - ", "Without Salt Rim"]
         }
     ],
-    "Fall Special Drinks": [
+    "Fall Specials": [
         {
             name: `Tequila Orange Crush
             `,

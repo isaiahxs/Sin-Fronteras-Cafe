@@ -74,53 +74,57 @@ export default function DrinksMenuNav({ sectionRefsDrinks }) {
 
     return (
         <nav className={navBarClass}>
-            <div className='menu-nav-options'>
-                <div>
-                    <button className='menu-nav-button' onClick={() => scrollToSection('White Wines')}>
-                        White Wines
-                    </button>
+            <div className='menu-nav-options drink-nav-options'>
+                <div className='first-three-menu-nav-buttons'>
+                    <div>
+                        <button className='menu-nav-button drink-nav-button' onClick={() => scrollToSection('White Wines')}>
+                            White Wines
+                        </button>
+                    </div>
+
+                    <div>
+                        <button className='menu-nav-button drink-nav-button' onClick={() => scrollToSection('Red Wines')}>
+                            Red Wines
+                        </button>
+                    </div>
+
+                    <div>
+                        <button
+                            className='menu-nav-button drink-nav-button'
+                            onClick={() => scrollToSection('Cocktails')}
+                        >
+                            Cocktails
+                        </button>
+                    </div>
                 </div>
 
-                <div>
-                    <button className='menu-nav-button' onClick={() => scrollToSection('Red Wines')}>
-                        Red Wines
-                    </button>
-                </div>
+                <div className='second-three-menu-nav-buttons'>
+                    <div>
+                        <button
+                            className='menu-nav-button drink-nav-button'
+                            onClick={() => scrollToSection('Fall Specials')}
+                        >
+                            Fall Specials
+                        </button>
+                    </div>
 
-                <div>
-                    <button
-                        className='menu-nav-button'
-                        onClick={() => scrollToSection('Cocktails')}
-                    >
-                        Cocktails
-                    </button>
-                </div>
+                    <div>
+                        <button
+                            className='menu-nav-button drink-nav-button'
+                            onClick={() => scrollToSection('Beers')}
+                        >
+                            Beers
+                        </button>
+                    </div>
 
-                <div>
-                    <button
-                        className='menu-nav-button'
-                        onClick={() => scrollToSection('Fall Special Drinks')}
-                    >
-                        Fall Special Drinks
-                    </button>
-                </div>
-
-                <div>
-                    <button
-                        className='menu-nav-button'
-                        onClick={() => scrollToSection('Beers')}
-                    >
-                        Beers
-                    </button>
-                </div>
-
-                <div>
-                    <button
-                        className='menu-nav-button'
-                        onClick={() => scrollToSection('Soft Drinks')}
-                    >
-                        Soft Drinks
-                    </button>
+                    <div>
+                        <button
+                            className='menu-nav-button drink-nav-button'
+                            onClick={() => scrollToSection('Soft Drinks')}
+                        >
+                            Soft Drinks
+                        </button>
+                    </div>
                 </div>
             </div>
         </nav>
