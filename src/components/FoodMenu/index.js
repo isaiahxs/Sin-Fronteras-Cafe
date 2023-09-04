@@ -1,4 +1,4 @@
-import MenuNav from '../MenuNav';
+import FoodMenuNav from '../FoodMenuNav';
 import { menuEnglishData } from './content';
 import './FoodMenu.css';
 
@@ -28,7 +28,7 @@ export default function FoodMenu() {
 
     return (
         <div className='foodMenu'>
-            <MenuNav sectionRefs={sectionRefs} />
+            <FoodMenuNav sectionRefs={sectionRefs} />
             {Object.keys(menuEnglishData).map((section) => (
                 <div key={section} className='menu-section' ref={(el) => (sectionRefs[section] = el)}>
                     <h2 className='section-header'>{section}</h2>

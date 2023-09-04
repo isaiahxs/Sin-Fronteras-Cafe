@@ -1,4 +1,4 @@
-.item-name-and-price {
+/* .item-name-and-price {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -15,7 +15,6 @@
 }
 
 .item-name {
-    /* max-width: 300px; */
     margin-bottom: 0px;
 }
 
@@ -29,14 +28,6 @@
     font-size: 0.8rem;
 }
 
-/* .menu-item:first-child {
-    border-top: 2px solid black;
-}
-
-.menu-item:last-child {
-    border-bottom: 2px solid black;
-} */
-
 .item-description {
     margin-top: 0px;
     margin-bottom: 0px;
@@ -49,10 +40,9 @@
     justify-content: center;
     font-size: 2.6rem;
     font-family: 'Vollkorn SC', serif;
-    /* margin-top: 70px; */
     margin-bottom: 0px;
 }
 
 .item-options {
     font-size: 0.9rem;
-}
+} */
