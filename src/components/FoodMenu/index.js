@@ -27,16 +27,19 @@ export default function FoodMenu() {
 
 
     return (
-        <div className='foodMenu'>
-            <FoodMenuNav sectionRefs={sectionRefs} />
-            {Object.keys(menuEnglishData).map((section) => (
-                <div key={section} className='menu-section' ref={(el) => (sectionRefs[section] = el)}>
-                    <h2 className='section-header'>{section}</h2>
-                    {menuEnglishData[section].map((item) => renderMenuItem(section, item))}
-                </div>
-            ))}
-            <div>Gluten Free</div>
-            <h4 className='food-warning'>*Consuming raw or undercooked meats, poultry, seafood, shellfish, or eggs may increase your risk of foodborne illness.</h4>
+        <div className='food-section'>
+            <h2 className='menu-header'>Food Menu</h2>
+            <div className='food-menu'>
+                <FoodMenuNav sectionRefs={sectionRefs} />
+                {Object.keys(menuEnglishData).map((section) => (
+                    <div key={section} className='menu-section' ref={(el) => (sectionRefs[section] = el)}>
+                        <h2 className='section-header'>{section}</h2>
+                        {menuEnglishData[section].map((item) => renderMenuItem(section, item))}
+                    </div>
+                ))}
+                <div>Gluten Free</div>
+                <h4 className='food-warning'>*Consuming raw or undercooked meats, poultry, seafood, shellfish, or eggs may increase your risk of foodborne illness.</h4>
+            </div>
         </div>
     )
 }

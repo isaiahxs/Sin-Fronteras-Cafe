@@ -3,6 +3,7 @@ import { useLanguage } from '../../LanguageContext';
 import { englishContent, spanishContent } from './content';
 import { Link, useLocation } from 'react-router-dom';
 import logo from '../../assets/icons/red-logo-margarita.png';
+import hamburger from '../../assets/icons/hamburger.png';
 import './Navigation.css'
 
 export default function Navigation() {
@@ -61,7 +62,15 @@ export default function Navigation() {
                     <img src={logo} className='small-logo' alt="Sin Fronteras Logo" onClick={() => scrollToTop()} />
                 </div>
 
-                <div>
+                <div className='nav-name'>
+                    Sin Fronteras Cafe
+                </div>
+
+                <div className='nav-logo-container'>
+                    <img src={hamburger} className='small-logo' alt='Hamburger Menu' />
+                </div>
+
+                {/* <div>
                     <button className='nav-button' onClick={() => scrollToSection('menu')}>
                         Menu
                     </button>
@@ -80,7 +89,7 @@ export default function Navigation() {
                     >
                         Contact
                     </button>
-                </div>
+                </div> */}
             </div>
         </nav>
     )

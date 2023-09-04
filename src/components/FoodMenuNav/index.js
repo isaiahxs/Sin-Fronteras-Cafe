@@ -75,34 +75,38 @@ export default function FoodMenuNav({ sectionRefs }) {
     return (
         <nav className={navBarClass}>
             <div className='menu-nav-options'>
-                <div>
-                    <button className='menu-nav-button' onClick={() => scrollToSection('Appetizers')}>
-                        Appetizers
-                    </button>
+                <div className='first-two-menu-buttons'>
+                    <div>
+                        <button className='menu-nav-button' onClick={() => scrollToSection('Appetizers')}>
+                            Appetizers
+                        </button>
+                    </div>
+
+                    <div>
+                        <button className='menu-nav-button' onClick={() => scrollToSection('Salads')}>
+                            Salads
+                        </button>
+                    </div>
                 </div>
 
-                <div>
-                    <button className='menu-nav-button' onClick={() => scrollToSection('Salads')}>
-                        Salads
-                    </button>
-                </div>
+                <div className='second-two-menu-buttons'>
+                    <div>
+                        <button
+                            className='menu-nav-button'
+                            onClick={() => scrollToSection('Entrees')}
+                        >
+                            Entrees
+                        </button>
+                    </div>
 
-                <div>
-                    <button
-                        className='menu-nav-button'
-                        onClick={() => scrollToSection('Entrees')}
-                    >
-                        Entrees
-                    </button>
-                </div>
-
-                <div>
-                    <button
-                        className='menu-nav-button'
-                        onClick={() => scrollToSection('Desserts')}
-                    >
-                        Desserts
-                    </button>
+                    <div>
+                        <button
+                            className='menu-nav-button'
+                            onClick={() => scrollToSection('Desserts')}
+                        >
+                            Desserts
+                        </button>
+                    </div>
                 </div>
             </div>
         </nav>

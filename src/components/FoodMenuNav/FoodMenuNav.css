@@ -6,13 +6,13 @@
 
 .menu-nav-button {
     font-size: 1.0rem;
-}
+} */
 
 .menu-nav-options {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-} */
+}
 
 .menu-nav {
     width: 100%;
@@ -25,7 +25,7 @@
 .menu-nav.sticky {
     position: sticky;
     /* top: 0px; */
-    top: 92px;
+    top: 85px;
     /* bottom: 10; */
     z-index: 10;
     background-color: rgba(0, 0, 0, 0.8);
@@ -42,9 +42,23 @@
 
 .menu-nav-options {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-around;
     /* max-width: 700px; */
+}
+
+.first-two-menu-buttons {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    margin-bottom: 5px;
+}
+
+.second-two-menu-buttons {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    /* margin-bottom: 5px; */
 }
 
 @media screen and (max-width: 600px) {

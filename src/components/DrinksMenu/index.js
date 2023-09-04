@@ -6,6 +6,7 @@ export default function DrinksMenu() {
     const sectionRefsDrinks = {};
 
     const renderMenuItem = (section, item) => (
+
         <div key={item.name} className='menu-item'>
             <div className='item-name-and-price'>
                 <h2 className='item-name'>{item.name}</h2>
@@ -21,20 +22,24 @@ export default function DrinksMenu() {
                 </div>
             )}
         </div>
+
     );
 
     // console.log('sectionRefsDrinks:', sectionRefsDrinks);
 
     return (
-        <div className='drinksMenu'>
-            <DrinksMenuNav sectionRefsDrinks={sectionRefsDrinks} />
-            {Object.keys(menuDrinksEnglishData).map((section) => (
-                <div key={section} className='menu-section' ref={(el) => (sectionRefsDrinks[section] = el)}>
-                    <h2 className='section-header'>{section}</h2>
-                    {menuDrinksEnglishData[section].map((item) => renderMenuItem(section, item))}
-                </div>
-            ))}
-            <h4 className='food-warning'> Drink Responsibly</h4>
-        </div>
+        <>
+            <h2 className='menu-header'>Drink Menu</h2>
+            <div className='drinksMenu'>
+                <DrinksMenuNav sectionRefsDrinks={sectionRefsDrinks} />
+                {Object.keys(menuDrinksEnglishData).map((section) => (
+                    <div key={section} className='menu-section' ref={(el) => (sectionRefsDrinks[section] = el)}>
+                        <h2 className='section-header'>{section}</h2>
+                        {menuDrinksEnglishData[section].map((item) => renderMenuItem(section, item))}
+                    </div>
+                ))}
+                <h4 className='food-warning'> Drink Responsibly</h4>
+            </div>
+        </>
     )
 }
