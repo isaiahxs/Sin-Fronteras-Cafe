@@ -73,3 +73,34 @@
 .item-options {
     font-size: 0.9rem;
 }
+
+.gluten-warning-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+
+.gluten-warning {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 0px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    margin-left: 5px;
+}
+
+.food-warning {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 0px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
+.gf-icon {
+    height: 35px;
+}

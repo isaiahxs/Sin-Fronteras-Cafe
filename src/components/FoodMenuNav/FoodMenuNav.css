@@ -38,6 +38,7 @@
 .menu-nav-button {
     width: 120px;
     font-size: 1.0rem;
+    border: 2px solid white;
 }
 
 .menu-nav-options {

@@ -32,7 +32,7 @@ export default function DrinksMenuNav({ sectionRefsDrinks }) {
     }, [lastScrollPos]);
 
     useEffect(() => {
-        const menuSection = document.getElementById('menu');
+        const menuSection = document.getElementById('drink-menu');
         const observer = new IntersectionObserver(
             (entries) => {
                 const entry = entries[0];

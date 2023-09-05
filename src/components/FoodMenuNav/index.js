@@ -32,7 +32,7 @@ export default function FoodMenuNav({ sectionRefs }) {
     }, [lastScrollPos]);
 
     useEffect(() => {
-        const menuSection = document.getElementById('menu');
+        const menuSection = document.getElementById('food-menu');
         const observer = new IntersectionObserver(
             (entries) => {
                 const entry = entries[0];

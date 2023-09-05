@@ -1,4 +1,5 @@
 import FoodMenuNav from '../FoodMenuNav';
+import gfIcon from '../../assets/icons/gf-white-text.png';
 import { menuEnglishData } from './content';
 import './FoodMenu.css';
 
@@ -37,7 +38,13 @@ export default function FoodMenu() {
                         {menuEnglishData[section].map((item) => renderMenuItem(section, item))}
                     </div>
                 ))}
-                <div>Gluten Free</div>
+                <div className='gluten-warning-container'>
+                    <img className='gf-icon' src={gfIcon} alt='Gluten Free Icon' />
+                    <h4 className='gluten-warning'>
+                        Gluten Free
+                    </h4>
+                </div>
+
                 <h4 className='food-warning'>*Consuming raw or undercooked meats, poultry, seafood, shellfish, or eggs may increase your risk of foodborne illness.</h4>
             </div>
         </div>

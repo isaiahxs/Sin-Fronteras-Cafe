@@ -19,7 +19,10 @@ export default function Hero() {
 
     const scrollToSection = (sectionId) => {
         const sectionElement = document.getElementById(sectionId);
-        sectionElement.scrollIntoView({ behavior: 'smooth' });
+        const yOffset = -110;
+        const topOffset = sectionElement.getBoundingClientRect().top + window.scrollY + yOffset;
+        window.scrollTo({ top: topOffset, behavior: 'smooth' });
+        // sectionElement.scrollIntoView({ behavior: 'smooth' });
     };
 
     return (
@@ -77,7 +80,7 @@ export default function Hero() {
                     </div>
 
                     <div className='hero-buttons-container'>
-                        <button className='view-services-hero' onClick={() => scrollToSection('menu')}>
+                        <button className='view-services-hero' onClick={() => scrollToSection('food-menu')}>
                             {content.viewServices}
                         </button>
 

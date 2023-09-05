@@ -16,6 +16,11 @@ export default function Navigation() {
     const navRef = useRef();
     const [isNavOpen, setIsNavOpen] = useState(false);
 
+
+    const toggleLanguage = () => {
+        setCurrentLanguage(currentLanguage === 'english' ? 'spanish' : 'english');
+    };
+
     const toggleNavOpen = () => {
         setIsNavOpen(!isNavOpen);
     }
@@ -113,31 +118,40 @@ export default function Navigation() {
                 <div ref={navRef} className={`nav-panel ${isNavOpen ? 'nav-open' : ''}`}>
                     <button className='x-button' onClick={toggleNavOpen}>X</button>
 
-                    <div>
-                        <button className='nav-button panel-button' onClick={() => scrollToSection('food-menu')}>
-                            Food Menu
-                        </button>
-                    </div>
+                    <div className='panel-buttons'>
+                        <div>
+                            <button className='nav-button panel-button' onClick={() => scrollToSection('food-menu')}>
+                                Food Menu
+                            </button>
+                        </div>
 
-                    <div>
-                        <button className='nav-button panel-button' onClick={() => scrollToSection('drink-menu')}>
-                            Drink Menu
-                        </button>
-                    </div>
+                        <div>
+                            <button className='nav-button panel-button' onClick={() => scrollToSection('drink-menu')}>
+                                Drink Menu
+                            </button>
+                        </div>
 
-                    <div>
-                        <button className='nav-button panel-button' onClick={() => scrollToSection('reviews')}>
-                            Reviews
-                        </button>
-                    </div>
+                        <div>
+                            <button className='nav-button panel-button' onClick={() => scrollToSection('reviews')}>
+                                Reviews
+                            </button>
+                        </div>
 
-                    <div>
-                        <button
-                            className='nav-button panel-button'
-                            onClick={() => scrollToSection('footer')}
-                        >
-                            Contact
-                        </button>
+                        <div>
+                            <button className='nav-button panel-button' onClick={() => scrollToSection('footer')}>
+                                Contact
+                            </button>
+                        </div>
+
+                        <div>
+                            <button className='language-toggle-button panel-language-button' onClick={toggleLanguage}>
+                                {currentLanguage === 'english' ? 'Español' : 'English'}
+                            </button>
+                        </div>
+
+                        <div className='nav-logo-container'>
+                            <img src={logo} className='big-logo panel-logo' alt="Sin Fronteras Logo" />
+                        </div>
                     </div>
                 </div>
             </div>
