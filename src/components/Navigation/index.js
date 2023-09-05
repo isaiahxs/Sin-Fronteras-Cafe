@@ -13,33 +13,69 @@ export default function Navigation() {
     const [isScrollingDown, setIsScrollingDown] = useState(false);
     const location = useLocation();
 
+    const navRef = useRef();
+    const [isNavOpen, setIsNavOpen] = useState(false);
+
+    const toggleNavOpen = () => {
+        setIsNavOpen(!isNavOpen);
+    }
+
     useEffect(() => {
-        const handleScroll = () => {
-            const currentScrollPos = window.pageYOffset;
+        if (isNavOpen) {
+            document.body.style.overflow = 'hidden';
+        } else {
+            document.body.style.overflow = 'unset';
+        }
+    }, [isNavOpen]);
 
-            if (currentScrollPos > lastScrollPos) {
-                setIsScrollingDown(true);
-            } else {
-                setIsScrollingDown(false);
+    useEffect(() => {
+        const checkIfClickedOutside = e => {
+            // If the menu is open and the clicked target is not within the menu,
+            // then close the menu
+            if (isNavOpen && navRef.current && !navRef.current.contains(e.target)) {
+                setIsNavOpen(false);
             }
-
-            setLastScrollPos(currentScrollPos);
         };
 
-        window.addEventListener('scroll', handleScroll);
+        document.addEventListener("mousedown", checkIfClickedOutside);
 
-        return () => window.removeEventListener('scroll', handleScroll);
-    }, [lastScrollPos]);
+        return () => {
+            // Cleanup the event listener
+            document.removeEventListener("mousedown", checkIfClickedOutside);
+        };
+    }, [isNavOpen]);
 
-    // const navBarClass = isScrollingDown ? 'nav-bar hidden' : 'nav-bar';
-    const navBarClass = isScrollingDown ? 'nav-bar' : 'nav-bar';
+    //to have hiding when scrolling ----------------------------------------------------------
+    // useEffect(() => {
+    //     const handleScroll = () => {
+    //         const currentScrollPos = window.pageYOffset;
+
+    //         if (currentScrollPos > lastScrollPos) {
+    //             setIsScrollingDown(true);
+    //         } else {
+    //             setIsScrollingDown(false);
+    //         }
+
+    //         setLastScrollPos(currentScrollPos);
+    //     };
+
+    //     window.addEventListener('scroll', handleScroll);
+
+    //     return () => window.removeEventListener('scroll', handleScroll);
+    // }, [lastScrollPos]);
+
+    // // const navBarClass = isScrollingDown ? 'nav-bar hidden' : 'nav-bar';
+    // const navBarClass = isScrollingDown ? 'nav-bar' : 'nav-bar';
 
     // const scrollToSection = (sectionId) => {
     //     const sectionElement = document.getElementById(sectionId);
     //     sectionElement.scrollIntoView({ behavior: 'smooth' });
     // };
+    //----------------------------------------------------------
 
     const scrollToSection = (sectionId) => {
+        setIsNavOpen(false);
+
         const sectionElement = document.getElementById(sectionId);
         if (sectionId === 'footer') {
             sectionElement.scrollIntoView({ behavior: 'smooth', block: 'end' });
@@ -56,7 +92,7 @@ export default function Navigation() {
     };
 
     return (
-        <nav className={navBarClass}>
+        <nav className='nav-bar'>
             <div className='nav-options'>
                 <div className='nav-logo-container'>
                     <img src={logo} className='small-logo' alt="Sin Fronteras Logo" onClick={() => scrollToTop()} />
@@ -67,29 +103,37 @@ export default function Navigation() {
                 </div>
 
                 <div className='nav-logo-container'>
-                    <img src={hamburger} className='small-logo' alt='Hamburger Menu' />
-                </div>
-
-                {/* <div>
-                    <button className='nav-button' onClick={() => scrollToSection('menu')}>
-                        Menu
+                    <button className='hamburger-menu' onClick={toggleNavOpen}>
+                        <img src={hamburger} className='small-logo' alt='Hamburger Menu' />
                     </button>
                 </div>
 
-                <div>
-                    <button className='nav-button' onClick={() => scrollToSection('reviews')}>
-                        Reviews
-                    </button>
-                </div>
+                {isNavOpen && <div className='backdrop'></div>}
 
-                <div>
-                    <button
-                        className={`nav-button`}
-                        onClick={() => scrollToSection('footer')}
-                    >
-                        Contact
-                    </button>
-                </div> */}
+                <div ref={navRef} className={`nav-panel ${isNavOpen ? 'nav-open' : ''}`}>
+                    <button className='x-button' onClick={toggleNavOpen}>X</button>
+
+                    <div>
+                        <button className='nav-button' onClick={() => scrollToSection('menu')}>
+                            Menu
+                        </button>
+                    </div>
+
+                    <div>
+                        <button className='nav-button' onClick={() => scrollToSection('reviews')}>
+                            Reviews
+                        </button>
+                    </div>
+
+                    <div>
+                        <button
+                            className={`nav-button`}
+                            onClick={() => scrollToSection('footer')}
+                        >
+                            Contact
+                        </button>
+                    </div>
+                </div>
             </div>
         </nav>
     )

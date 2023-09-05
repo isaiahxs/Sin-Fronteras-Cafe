@@ -1,0 +1,11 @@
+.drink-section {
+    background-color: #ffffff;
+    border: 2px solid black;
+    margin-top: 20px;
+}
+
+.drink-warning {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}

@@ -28,7 +28,7 @@ export default function DrinksMenu() {
     // console.log('sectionRefsDrinks:', sectionRefsDrinks);
 
     return (
-        <>
+        <div className='drink-section'>
             <h2 className='menu-header'>Drink Menu</h2>
             <div className='drinksMenu'>
                 <DrinksMenuNav sectionRefsDrinks={sectionRefsDrinks} />
@@ -38,8 +38,8 @@ export default function DrinksMenu() {
                         {menuDrinksEnglishData[section].map((item) => renderMenuItem(section, item))}
                     </div>
                 ))}
-                <h4 className='food-warning'> Drink Responsibly</h4>
+                <h4 className='drink-warning'>Please drink responsibly</h4>
             </div>
-        </>
+        </div>
     )
 }
