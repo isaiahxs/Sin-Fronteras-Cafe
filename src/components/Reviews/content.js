@@ -69,14 +69,14 @@ export const spanishContent = {
             imgSrc: mack,
             reviewText: "¡Un lugar increíble con comida asombrosa! Definitivamente lo recomendaría y volveré una y otra vez. El servicio fue rápido y preciso. El personal fue súper amable. Si te gusta la comida hispana, ¡esto es una obligación probarlo! Pedí una chimichanga y estuvo fantástica. Comida: 5/5 | Servicio: 5/5 | Ambiente: 5/5",
             reviewLink: "https://g.co/kgs/azBt4E",
-            buttonText: 'Review Link'
+            buttonText: 'Link de Reseña'
         },
         {
             reviewerName: "Devin R",
             imgSrc: devin,
             reviewText: "He disfrutado de este lugar desde que lo descubrí hace muchos años. Ahora tienen un patio al aire libre también. ¡El dueño es muy amigable y complaciente! Se ha tomado la molestia de presentarse y charlar con nuestro grupo varias veces desde que empecé a ir allí. La última vez me sentía diferente y decidí pedir el atún sellado. Fue el mejor atún sellado que recuerdo haber tenido. Y como mariscos en muchos lugares. Muy impresionante y lo recomiendo encarecidamente. ¡Este es uno de mis restaurantes favoritos pequeños! :)",
             reviewLink: "https://g.co/kgs/pvujA1",
-            buttonText: 'Review Link'
+            buttonText: 'Link de Reseña'
         },
         {
             reviewerName: "Andrew C",
@@ -87,7 +87,7 @@ export const spanishContent = {
 
             También tienen margaritas geniales.`,
             reviewLink: "https://g.co/kgs/PYfbUe",
-            buttonText: 'Review Link'
+            buttonText: 'Link de Reseña'
         },
         {
             reviewerName: "Farrah K",
@@ -97,21 +97,21 @@ export const spanishContent = {
             Restricciones dietéticas: Muchos mariscos"
             `,
             reviewLink: "https://g.co/kgs/hSTxAq",
-            buttonText: 'Review Link'
+            buttonText: 'Link de Reseña'
         },
         {
             reviewerName: "Richard A",
             imgSrc: richard,
             reviewText: `¡Wow! ¡Qué lugar tan estupendo! Almuerzo o cena, siempre es bueno. El dueño te da la bienvenida; el servicio es genial. Pero la estrella aquí es la comida: hecha profesionalmente, con cuidado, visualmente atractiva y con una amplia gama de sabores deliciosos. Las porciones son generosas, los precios son razonables: una gran relación calidad-precio para tu dinero. Todo sabe fresco. No te dejes llevar por la ubicación: está limpio y seguro. Estarás feliz de haber probado este lugar y probablemente volverás a menudo, como hacemos nosotros.`,
             reviewLink: "https://g.co/kgs/6WbzSU",
-            buttonText: 'Review Link'
+            buttonText: 'Link de Reseña'
         },
         {
             reviewerName: "Christine A",
             imgSrc: christine,
             reviewText: `¡Este lugar es asombroso! Las mejores margaritas porque están hechas con jugo de limón fresco. El mejor guacamole porque utilizan los mejores aguacates. Nuestra comida fue absolutamente increíble y realmente puedes saborear el amor y el cuidado. Está limpio y acogedor. El dueño se esfuerza por asegurarse de que los clientes estén bien alimentados y contentos. Definitivamente volveremos muchas veces, ¡seguro! :)`,
             reviewLink: "https://g.co/kgs/jBqUdt",
-            buttonText: 'Review Link'
+            buttonText: 'Link de Reseña'
         },
     ]
 };

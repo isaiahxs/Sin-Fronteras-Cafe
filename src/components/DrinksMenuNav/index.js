@@ -5,8 +5,8 @@ import { Link, useLocation } from 'react-router-dom';
 import './DrinksMenuNav.css'
 
 export default function DrinksMenuNav({ sectionRefsDrinks }) {
-    // const { currentLanguage, setCurrentLanguage } = useLanguage();
-    // const content = currentLanguage === 'english' ? englishContent : spanishContent;
+    const { currentLanguage, setCurrentLanguage } = useLanguage();
+    const content = currentLanguage === 'english' ? englishContent : spanishContent;
     const [lastScrollPos, setLastScrollPos] = useState(0);
 
     const [isScrollingDown, setIsScrollingDown] = useState(false);
@@ -78,13 +78,13 @@ export default function DrinksMenuNav({ sectionRefsDrinks }) {
                 <div className='first-three-menu-nav-buttons'>
                     <div>
                         <button className='menu-nav-button drink-nav-button' onClick={() => scrollToSection('White Wines')}>
-                            White Wines
+                            {content.whiteWines}
                         </button>
                     </div>
 
                     <div>
                         <button className='menu-nav-button drink-nav-button' onClick={() => scrollToSection('Red Wines')}>
-                            Red Wines
+                            {content.redWines}
                         </button>
                     </div>
 
@@ -93,7 +93,7 @@ export default function DrinksMenuNav({ sectionRefsDrinks }) {
                             className='menu-nav-button drink-nav-button'
                             onClick={() => scrollToSection('Cocktails')}
                         >
-                            Cocktails
+                            {content.cocktails}
                         </button>
                     </div>
                 </div>
@@ -104,7 +104,7 @@ export default function DrinksMenuNav({ sectionRefsDrinks }) {
                             className='menu-nav-button drink-nav-button'
                             onClick={() => scrollToSection('Fall Specials')}
                         >
-                            Fall Specials
+                            {content.fallSpecials}
                         </button>
                     </div>
 
@@ -113,7 +113,7 @@ export default function DrinksMenuNav({ sectionRefsDrinks }) {
                             className='menu-nav-button drink-nav-button'
                             onClick={() => scrollToSection('Beers')}
                         >
-                            Beers
+                            {content.beers}
                         </button>
                     </div>
 
@@ -122,7 +122,7 @@ export default function DrinksMenuNav({ sectionRefsDrinks }) {
                             className='menu-nav-button drink-nav-button'
                             onClick={() => scrollToSection('Soft Drinks')}
                         >
-                            Soft Drinks
+                            {content.softDrinks}
                         </button>
                     </div>
                 </div>

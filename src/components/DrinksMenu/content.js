@@ -1,3 +1,15 @@
+export const englishContent = {
+    drinkMenu: 'Drink Menu',
+    options: 'Options:',
+    drinkWarning: 'Please drink responsibly',
+}
+
+export const spanishContent = {
+    drinkMenu: 'Menú de Bebidas',
+    options: 'Opciones:',
+    drinkWarning: 'Por favor beba con responsabilidad',
+}
+
 export const menuDrinksEnglishData = {
     "White Wines": [
         {

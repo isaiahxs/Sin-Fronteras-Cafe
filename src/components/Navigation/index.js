@@ -121,25 +121,25 @@ export default function Navigation() {
                     <div className='panel-buttons'>
                         <div>
                             <button className='nav-button panel-button' onClick={() => scrollToSection('food-menu')}>
-                                Food Menu
+                                {content.foodMenu}
                             </button>
                         </div>
 
                         <div>
                             <button className='nav-button panel-button' onClick={() => scrollToSection('drink-menu')}>
-                                Drink Menu
+                                {content.drinkMenu}
                             </button>
                         </div>
 
                         <div>
                             <button className='nav-button panel-button' onClick={() => scrollToSection('reviews')}>
-                                Reviews
+                                {content.reviews}
                             </button>
                         </div>
 
                         <div>
                             <button className='nav-button panel-button' onClick={() => scrollToSection('footer')}>
-                                Contact
+                                {content.contact}
                             </button>
                         </div>
 

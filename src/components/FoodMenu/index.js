@@ -1,9 +1,12 @@
 import FoodMenuNav from '../FoodMenuNav';
 import gfIcon from '../../assets/icons/gf-white-text.png';
-import { menuEnglishData } from './content';
+import { useLanguage } from '../../LanguageContext';
+import { englishContent, spanishContent, menuEnglishData, menuSpanishData } from './content';
 import './FoodMenu.css';
 
 export default function FoodMenu() {
+    const { currentLanguage, setCurrentLanguage } = useLanguage();
+    const content = currentLanguage === 'english' ? englishContent : spanishContent;
     const sectionRefs = {};
 
     const renderMenuItem = (section, item) => (
@@ -15,7 +18,7 @@ export default function FoodMenu() {
             <h3 className='item-description'>{item.description}</h3>
             {item.options && item.options.length > 0 && (
                 <div className='item-options'>
-                    Options:
+                    {content.options}
                     {item.options.map((option) => (
                         <span key={option} className='option'> {option}</span>
                     ))}
@@ -29,7 +32,7 @@ export default function FoodMenu() {
 
     return (
         <div className='food-section'>
-            <h2 className='menu-header'>Food Menu</h2>
+            <h2 className='menu-header'>{content.foodMenu}</h2>
             <div className='food-menu'>
                 <FoodMenuNav sectionRefs={sectionRefs} />
                 {Object.keys(menuEnglishData).map((section) => (
@@ -41,11 +44,11 @@ export default function FoodMenu() {
                 <div className='gluten-warning-container'>
                     <img className='gf-icon' src={gfIcon} alt='Gluten Free Icon' />
                     <h4 className='gluten-warning'>
-                        Gluten Free
+                        {content.glutenFree}
                     </h4>
                 </div>
 
-                <h4 className='food-warning'>*Consuming raw or undercooked meats, poultry, seafood, shellfish, or eggs may increase your risk of foodborne illness.</h4>
+                <h4 className='food-warning'>{content.foodWarning}</h4>
             </div>
         </div>
     )

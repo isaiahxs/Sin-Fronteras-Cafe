@@ -5,8 +5,8 @@ import { Link, useLocation } from 'react-router-dom';
 import './FoodMenuNav.css'
 
 export default function FoodMenuNav({ sectionRefs }) {
-    // const { currentLanguage, setCurrentLanguage } = useLanguage();
-    // const content = currentLanguage === 'english' ? englishContent : spanishContent;
+    const { currentLanguage, setCurrentLanguage } = useLanguage();
+    const content = currentLanguage === 'english' ? englishContent : spanishContent;
     const [lastScrollPos, setLastScrollPos] = useState(0);
 
     const [isScrollingDown, setIsScrollingDown] = useState(false);
@@ -78,13 +78,13 @@ export default function FoodMenuNav({ sectionRefs }) {
                 <div className='first-two-menu-buttons'>
                     <div>
                         <button className='menu-nav-button' onClick={() => scrollToSection('Appetizers')}>
-                            Appetizers
+                            {content.appetizers}
                         </button>
                     </div>
 
                     <div>
                         <button className='menu-nav-button' onClick={() => scrollToSection('Salads')}>
-                            Salads
+                            {content.salads}
                         </button>
                     </div>
                 </div>
@@ -95,7 +95,7 @@ export default function FoodMenuNav({ sectionRefs }) {
                             className='menu-nav-button'
                             onClick={() => scrollToSection('Entrees')}
                         >
-                            Entrees
+                            {content.entrees}
                         </button>
                     </div>
 
@@ -104,7 +104,7 @@ export default function FoodMenuNav({ sectionRefs }) {
                             className='menu-nav-button'
                             onClick={() => scrollToSection('Desserts')}
                         >
-                            Desserts
+                            {content.desserts}
                         </button>
                     </div>
                 </div>
