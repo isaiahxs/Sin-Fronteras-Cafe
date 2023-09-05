@@ -4,10 +4,15 @@ import './CombinedMenu.css';
 
 export default function CombinedMenu() {
     return (
-        <div id='menu'>
+        <div id='combined-menu'>
             <div className='menu-container'>
-                <FoodMenu />
-                <DrinksMenu />
+                <div id='food-menu'>
+                    <FoodMenu />
+                </div>
+
+                <div id='drink-menu'>
+                    <DrinksMenu />
+                </div>
             </div>
         </div>
     )

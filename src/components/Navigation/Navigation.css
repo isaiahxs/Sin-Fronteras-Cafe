@@ -32,8 +32,8 @@
     font-family: 'Vollkorn SC', serif;
 }
 
-.nav-bar button {
-    font-size: 0.8rem;
+.panel-button {
+    font-size: 1.0rem;
     padding: 0px 10px;
 }
 
@@ -126,7 +126,7 @@
     transition: 0.5s;
     transform: translateX(100%);
     padding: 25px;
-    background-color: #172a45;
+    background-color: black;
     z-index: 100;
 }
 
@@ -151,7 +151,7 @@
 
 .x-button {
     position: absolute;
-    background-color: rgb(255, 64, 64);
+    background-color: #c6133e;
     border-color: white;
     padding: 0px;
     height: 40px;
@@ -159,6 +159,7 @@
     top: 20px;
     right: 20px;
     transition: 0.3s all;
+    font-size: 0.8rem;
 }
 
 .x-button:hover {
