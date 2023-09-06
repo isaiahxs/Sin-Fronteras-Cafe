@@ -86,6 +86,7 @@
 
 .hero-descriptions-container {
     padding: 10px;
+    padding-bottom: 0px;
 }
 
 .description {
@@ -111,7 +112,8 @@
 }
 
 .hero-address,
-.hero-phone {
+.hero-phone,
+.hero-facebook {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -127,7 +129,7 @@
 }
 
 .hero-map-icon {
-    /* margin-left: 10px; */
+    /* margin-top: 10px; */
 }
 
 .hero-buttons-container {

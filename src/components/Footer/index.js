@@ -47,7 +47,6 @@ export default function Footer() {
                                     <div className='footer-icon-container'>
                                         <img src={map_pin} className='footer-icon GB-map-icon' alt='Map Pin Icon' />
                                         <p className='footer-icon-description'>
-                                            {/* <img src={map_pin} className='footer-icon GB-map-icon' alt='Map Pin Icon' /> */}
                                             2129 Forest Dr. Annapolis, MD 21401
                                         </p>
                                     </div>

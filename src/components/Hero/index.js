@@ -57,27 +57,34 @@ export default function Hero() {
                         <h3 className='contact-information'>
                             <div className='hero-address'>
                                 <a href="https://www.google.com/maps/place/Sin+Fronteras/@38.9775203,-76.5394309,17z/data=!3m1!4b1!4m6!3m5!1s0x89b7f6ce8f43a82f:0x43022ee12cca4c62!8m2!3d38.9775162!4d-76.536856!16s%2Fg%2F1tpf80bs?entry=ttu" target='_blank' rel='noopener noreferrer'>
-
-                                    <span>
-                                        <img src={map_pin} className='footer-icon hero-map-icon' alt='Map Pin' />
-                                        2129 Forest Dr. Annapolis, MD 21401
-                                    </span>
+                                    <div className='footer-icon-container'>
+                                        <span>
+                                            <img src={map_pin} className='footer-icon hero-map-icon' alt='Map Pin' />
+                                            2129 Forest Dr. Annapolis, MD 21401
+                                        </span>
+                                    </div>
                                 </a>
                             </div>
+
                             <div className='hero-phone'>
-                                <div className='hero-img-container'>
-                                    <a href='tel:+14102660013'>
-                                        <span>
-                                            <img src={phone} className='footer-icon hero-phone-icon' alt='Phone Icon' />
+                                <a href='tel:+14102660013'>
+                                    <div className='footer-icon-container'>
+                                        <img src={phone} className='footer-icon hero-phone-icon' alt='Phone Icon' />
+                                        <p className='footer-icon-description'>
                                             (410) 266-0013
-                                        </span>
-                                    </a>
-                                </div>
+                                        </p>
+                                    </div>
+                                </a>
                             </div>
+
                             <div className='hero-facebook'>
                                 <a href="https://www.facebook.com/sinfronterascafe/?ref=page_internal" target='_blank' rel='noopener noreferrer'>
-                                    <img src={facebook} className='footer-icon hero-facebook-icon' alt='Facebook Logo' />
-                                    Facebook
+                                    <div className='footer-icon-container'>
+                                        <img src={facebook} className='footer-icon hero-facebook-icon' alt='Facebook Logo' />
+                                        <p className='footer-icon-description'>
+                                            Facebook
+                                        </p>
+                                    </div>
                                 </a>
                             </div>
                         </h3>
