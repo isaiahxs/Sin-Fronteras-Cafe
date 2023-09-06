@@ -339,35 +339,280 @@ export const menuSpanishData = {
         {
             name: "Guacamole",
             price: "$10.99",
-            description: `A generous serving of fresh homemade guacamole with fresh cilantro, tomato, onion, and jalapeños. Served with a warm corn tortilla chip.
+            description: `Una generosa porción de guacamole casero fresco con cilantro, tomate, cebolla y jalapeños. Servido con tortillas de maíz calientes.
             `,
-            options: ["No Spicy - ", "Med Spicy - ", "Spicy"]
-        }
+            options: ["No Picante - ", "Picante Medio - ", "Picante"]
+        },
+        {
+            name: "Nachos Sin Fronteras",
+            price: "$10.99",
+            description: `Totopos de maíz apilados y cubiertos con frijoles refritos, pico de gallo, lechuga, jalapeños frescos, crema aguacate salsa y su elección de chorizo de res o pollo.
+            `,
+            options: ["Pollo - ", "Res - ", "Chorizo - ", "Carnitas de Cerdo"]
+        },
+        {
+            name: "Quesadilla",
+            price: "$11.99",
+            description: `1 gran tortilla de harina rellena de queso y su elección de pollo, chorizo, carnitas o res.
+            `,
+            options: ["Pollo - ", "Res - ", "Chorizo - ", "Carnitas de Cerdo"]
+        },
+        {
+            name: "Chile con Queso",
+            price: "$10.99",
+            description: `Nuestra mezcla especial de chile y queso chorizo. Servido con totopos de maíz calientes.
+            `,
+            options: []
+        },
+        {
+            name: "Yuca con Chicharron",
+            price: "$11.99",
+            description: `Yuca frita o al vapor con chicharrón frito (cerdo frito). Servido con repollo fresco y cubierto con nuestra salsa de crema dulce.
+        `,
+            options: ["Frita - ", "Al Vapor"]
+        },
+        {
+            name: "Camarones al Ajillo",
+            price: "$11.99",
+            description: `Salteados con Tequila El Maestro, ajo, lima fresca y servidos con puntas de baguette.
+        `,
+            options: []
+        },
+        {
+            name: "Calamares Fritos",
+            price: "$11.99",
+            description: `Calamares ligeramente empanizados, disponibles a la parrilla o fritos, y servidos con nuestra famosa salsa de tomatillo y lima.
+        `,
+            options: ["A la Parrilla - ", "Fritos"]
+        },
+        {
+            name: `3 Tacos Suaves`,
+            price: "$11.99",
+            description: `Tortilla de maíz suave rellena de su elección de pollo, res, carnitas, chorizo, camarones o Barbacoa de res, servida con pico de gallo.
+        `,
+            options: ["Res - ", "Pollo - ", "Chorizo - ", "Carnitas de Cerdo"]
+        },
+        {
+            name: "Salsa y Totopos",
+            price: "$1.99",
+            description: `Totopos de maíz con salsa casera.
+        `,
+            options: []
+        },
+        {
+            name: "Sopa de Tortilla de Pollo de 16 oz.",
+            price: "$8.99",
+            description: `Cubierta con crema agria, queso, aguacate, cilantro y tiras de tortilla.
+        `,
+            options: []
+        },
+        {
+            // Sin gluten
+            name: "2 Empanadas Colombianas de Pollo",
+            price: "$8.99",
+            description: `Servidas con Salsa Aji.`,
+            options: []
+        },
     ],
     Ensaladas: [
         {
-            name: `Acapulco Salad`,
+            name: `Ensalada Acapulco`,
             price: "$19.99",
-            description: `Grilled and blackened filet of salmon, paired up with baby greens, tomatoes, cucumber, Monterey cheese, and avocado. Tossed with homemade raspberry chipotle vinaigrette dressing.
+            description: `Filete de salmón a la parrilla y empanizado, acompañado de hojas verdes, tomates, pepino, queso Monterey y aguacate. Aderezado con nuestra vinagreta casera de frambuesa y chipotle.
         `,
             options: []
-        }
+        },
+        {
+            name: `Ensalada Sin Fronteras`,
+            price: "$15.99",
+            description: `Hojas verdes frescas del jardín, verduras a la parrilla, frijoles, pico de gallo y aguacate con su elección de camarones, tilapia, pollo o res.
+        `,
+            options: ["Pollo Fajita - ", "Res Fajita - ", "Filete de Tilapia - ", "Camarones"]
+        },
+        {
+            name: `Ensalada de Taco`,
+            price: "$14.99",
+            description: `Una tortilla crujiente de 12" rellena de lechuga, tomate, cebolla, frijoles negros, queso recién rallado y su elección de pollo, res, camarones o vegetariana. Con nuestro aderezo casero, crema aguacate y salsa de guacamole al lado.
+        `,
+            options: ["Res - ", "Pollo - ", "Camarones - ", "Vegetariana - ", "Carnitas de Cerdo"]
+        },
     ],
     'Platos Principales': [
         {
             name: `Baleada (2)`,
             price: "$11.99",
-            description: `A Honduran specialty. Two tortillas, stuffed with refried beans, fresh grated cheese, avocado, and imported Honduras cream. Choice of carne asada (steak) or chorizo with egg.`,
-            options: ["Beef - ", "Chorizo with Egg"]
-        }
+            description: `Una especialidad hondureña. Dos tortillas rellenas de frijoles refritos, queso fresco rallado, aguacate y crema hondureña importada. Elección de carne asada (bistec) o chorizo con huevo.`,
+            options: ["Res - ", "Chorizo con Huevo"]
+        },
+        {
+            name: `Burrito`,
+            price: "$11.99",
+            description: `Una gran tortilla de harina rellena de arroz, frijoles, queso y chipotle, con su elección de pollo, chorizo, carnitas, res o vegetariano, y cubierto con salsa de guacamole y crema aguacate.
+            `,
+            options: ["Res - ", "Chorizo - ", "Carnitas de Cerdo - ", "Vegetariano"]
+        },
+        {
+            name: `Chimichanga`,
+            price: "$11.99",
+            description: `Nuestro burrito frito y su elección de pollo, chorizo, carnitas, res o vegetariano, y cubierto con crema aguacate y salsa de guacamole.
+            `,
+            options: ["Res - ", "Pollo - ", "Carnitas de Cerdo - ", "Chorizo - ", "Vegetariano"]
+        },
+        {
+            name: `Sándwich Cubano`,
+            price: "$10.99",
+            description: `Estilo Miami con cerdo, jamón, queso suizo, pepinillos eneldo y mostaza. Servido con su elección de papas fritas, plátanos fritos, yuca o una ensalada pequeña.
+            `,
+            options: ["Papas Fritas - ", "Yuca - ", "Plátanos Fritos - ", "Ensalada Pequeña"]
+        },
+        {
+            name: `Pollo Tropical`,
+            price: "$16.99",
+            description: `Pechuga de pollo a la parrilla marinada con especias caribeñas y cubierta con salsa tropical de mango al curry. Hecha con cebolla, cilantro, tomates, pimientos dulces y servida con arroz.
+            `,
+            options: []
+        },
+        {
+            name: `Pollo a La Barbacoa`,
+            price: "$17.99",
+            description: `Un cuarto de pollo, estilo mexicano, envuelto en papel encerado. Marinado con hierbas y cubierto con nuestra famosa salsa de barbacoa mexicana. Servido con una tortilla de arroz y salsa secreta verde al lado.
+            `,
+            options: []
+        },
+        {
+            name: `Pollo Ranchero`,
+            price: "$17.99",
+            description: `Pechuga de pollo ligeramente enharinada y cocida con vino blanco. Cubierta con salsa ranchera y queso Monterey. Servida con arroz y ensalada.
+            `,
+            options: []
+        },
+        {
+            name: `Enchiladas Mexicanas`,
+            price: "$14.99",
+            description: `Tres tortillas suaves, enrolladas a mano y rellenas de su elección de pollo, chorizo, carnitas, res o vegetarianas. Servidas con casamiento.
+            `,
+            options: ["Salsa de Mole - ", "Salsa de Tomatillo - ", "Carnitas - ", "Res - ", "Pollo - ", "Chorizo - ", "Vegetarianas"]
+        },
+        {
+            name: `Chicharrón en Salsa Verde`,
+            price: "$17.99",
+            description: `Crujiente cerdo salteado con cebolla, cilantro y cubierto con salsa verde de tomatillo. Servido con tortillas de harina y arroz.
+            `,
+            options: []
+        },
+        {
+            name: `Chile Relleno`,
+            price: "$19.99",
+            description: `Un chile poblano tostado relleno de queso, salsa de tomatillo y su elección de pollo o vegetariano. Servido con casamiento.
+            `,
+            options: ["Pollo - ", "Vegetariano"]
+        },
+        {
+            name: `Fajitas`,
+            price: "$20.99",
+            description: `Cebollas y pimientos salteados, servidos con casamiento, tortillas de harina y su elección de pollo, res o camarones. (Costo adicional por proteínas).
+            `,
+            options: ["Res - ", "Pollo - ", "Camarones - ", "Camarones y Pollo Res +$2 - ", "Res y Pollo +$2"]
+        },
+        {
+            name: `Lomo Saltado Peruano`,
+            price: "$19.99",
+            description: `Un trozo de filete de res tierno, cocinado con aceite de oliva, salsa de soja, vino blanco, ají, pimienta, tomate y cebolla. Servido sobre papas fritas o yuca. Viene con un lado de arroz.
+            `,
+            options: ["Papas Fritas - ", "Yuca"]
+        },
+        {
+            name: `Ropa Vieja`,
+            price: "$21.99",
+            description: `Res marinada desmenuzada, cocida con vino tinto y verduras frescas. Servida con casamiento y plátanos dulces.
+            `,
+            options: []
+        },
+        {
+            name: `Chile en Nogada`,
+            price: "$19.99",
+            description: `Un chile poblano tostado, relleno de carne molida de res sazonada y combinada con pasas y plátanos dulces. Cubierto con nuestra deliciosa y casera crema fría de nogada y servido con arroz blanco.
+            `,
+            options: []
+        },
+        {
+            name: `Camarones Michoacanos`,
+            price: "$18.99",
+            description: `Camarones salteados con pimientos verdes y rojos, cebolla y salsa mexicana de crema de chipotle. Servidos con arroz blanco y tortillas de harina.
+            `,
+            options: []
+        },
+        {
+            name: `Carne Asada a La Mexicana`,
+            price: "$18.99",
+            description: `Filete de New York marinado y cubierto con salsa ranchera. Servido con una ensalada de la casa y casamiento.
+            `,
+            options: ["Casamiento"]
+        },
+        {
+            name: `Pescado Oaxaca`,
+            price: "$18.99",
+            description: `Filete de tilapia a la parrilla, cubierto con salsa de crema de chipotle y vino blanco, pimientos y jamón serrano. Servido con ensalada de la casa y casamiento.
+            `,
+            options: ["Casamiento"]
+        },
+        {
+            name: `Salmón Margarita`,
+            price: "$21.99",
+            description: `Un filete de salmón marinado en tequila, jugo fresco de lima, especias y cocido con ajo y tomates. Servido con puré de papas con chipotle y espárragos a la parrilla.
+            `,
+            options: []
+        },
+        {
+            name: `Atún Sellado El Maestro`,
+            price: "$20.99",
+            description: `Un filete de atún con costra de especias peruanas sobre puré de papas con chipotle y servido con juliana de verduras salteadas con tequila El Maestro, salsa de soya, jengibre fresco y un toque de salsa wasabi roja asada.
+            `,
+            options: ["Medio - ", "Poco Hecho - ", "Poco Hecho"]
+        },
+        {
+            name: `Tilapia Estilo Caribeño`,
+            price: "$16.99",
+            description: `Filete de tilapia marinado cocido con vino blanco, cebolla y pimientos dulces. Cubierto con salsa de chutney de mango y servido con arroz y una ensalada de la casa.
+            `,
+            options: []
+        },
+        {
+            name: `Chuleta de Cerdo a La Mamajuana`,
+            price: "$22.99",
+            description: `Una chuleta de cerdo gruesa marinada en cítricos y cubierta con jamón serrano y aros de cebolla. Servida con puré de papas, verduras salteadas y salsa casera de Mamajuana.
+            `,
+            options: []
+        },
+        {
+            name: `Picadillo Cubano`,
+            price: "$15.99",
+            description: `Carne molida, pasas, pimientos, cebollas y ajo, sazonados al estilo cubano. Servido con un lado de arroz y plátanos dulces fritos.
+            `,
+            options: []
+        },
     ],
     Postres: [
         {
             name: `Flan Latino`,
             price: "$5.99",
-            description: `With House-Made Caramel Sauce.
+            description: `Con Salsa de Caramelo Casera.
             `,
             options: []
-        }
-    ]
+        },
+        {
+            name: `Tempura de Plátano Mexicano`,
+            price: "$7.99",
+            description: `Con Helado de Vainilla al Lado.
+            `,
+            options: []
+        },
+        {
+            name: `Pudín de Pan Latino`,
+            price: "$7.99",
+            description: `Con Helado de Vainilla al Lado.
+            `,
+            options: []
+        },
+    ],
 };
