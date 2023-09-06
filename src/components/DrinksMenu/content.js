@@ -322,7 +322,7 @@ export const menuDrinksEnglishData = {
 
 
 export const menuDrinksSpanishData = {
-    "White Wines": [
+    "Vinos Blancos": [
         {
             name: `Oyster Bay Rosé
             `,
@@ -332,7 +332,7 @@ export const menuDrinksSpanishData = {
             options: ["Glass - ", "Bottle"]
         }
     ],
-    "Red Wines": [
+    "Vinos Rojos": [
         {
             name: `Old Soul Cabernet
             `,
@@ -342,7 +342,7 @@ export const menuDrinksSpanishData = {
             options: ["Glass - ", "Bottle"]
         }
     ],
-    Cocktails: [
+    Cócteles: [
         {
             name: `Mojito
             `,
@@ -352,7 +352,7 @@ export const menuDrinksSpanishData = {
             options: []
         }
     ],
-    "Fall Specials": [
+    "Especiales de Otoño": [
         {
             name: `Tequila Orange Crush
             `,
@@ -362,7 +362,7 @@ export const menuDrinksSpanishData = {
             options: ["Also available with Blanco Tequila"]
         }
     ],
-    Beers: [
+    Cervezas: [
         {
             name: `Coors Light
             `,
@@ -372,9 +372,9 @@ export const menuDrinksSpanishData = {
             options: []
         }
     ],
-    "Soft Drinks": [
+    "Refrescos": [
         {
-            name: `Coke
+            name: `Coca
             `,
             price: "$1.95",
             description: `

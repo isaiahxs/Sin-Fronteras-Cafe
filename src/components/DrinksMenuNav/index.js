@@ -61,11 +61,20 @@ export default function DrinksMenuNav({ sectionRefsDrinks }) {
 
     // const navBarClassUp = isScrollingUp ? 'menu-nav sticky up' : 'menu-nav';
 
-    const scrollToSection = (section) => {
-        const sectionElement = sectionRefsDrinks[section];
-        if (sectionElement) {
-            // sectionElement.scrollIntoView({ behavior: 'smooth' });
+    // const scrollToSection = (section) => {
+    //     const sectionElement = sectionRefsDrinks[section];
+    //     if (sectionElement) {
+    //         // sectionElement.scrollIntoView({ behavior: 'smooth' });
 
+    //         const yOffset = -220;
+    //         const topOffset = sectionElement.getBoundingClientRect().top + window.scrollY + yOffset;
+    //         window.scrollTo({ top: topOffset, behavior: 'smooth' });
+    //     }
+    // };
+
+    const scrollToSection = (section) => {
+        const sectionElement = document.getElementById(section.toLowerCase().replace(' ', '-'));
+        if (sectionElement) {
             const yOffset = -220;
             const topOffset = sectionElement.getBoundingClientRect().top + window.scrollY + yOffset;
             window.scrollTo({ top: topOffset, behavior: 'smooth' });
@@ -77,22 +86,26 @@ export default function DrinksMenuNav({ sectionRefsDrinks }) {
             <div className='menu-nav-options drink-nav-options'>
                 <div className='first-three-menu-nav-buttons'>
                     <div>
-                        <button className='menu-nav-button drink-nav-button' onClick={() => scrollToSection('White Wines')}>
+                        {/* <button className='menu-nav-button drink-nav-button' onClick={() => scrollToSection('White Wines')}> */}
+                        <button className='menu-nav-button' onClick={() => scrollToSection(currentLanguage === 'english' ? 'White Wines' : 'Vinos Blancos')}>
+
                             {content.whiteWines}
                         </button>
                     </div>
 
                     <div>
-                        <button className='menu-nav-button drink-nav-button' onClick={() => scrollToSection('Red Wines')}>
+                        {/* <button className='menu-nav-button drink-nav-button' onClick={() => scrollToSection('Red Wines')}> */}
+                        <button className='menu-nav-button' onClick={() => scrollToSection(currentLanguage === 'english' ? 'Red Wines' : 'Vinos Rojos')}>
                             {content.redWines}
                         </button>
                     </div>
 
                     <div>
-                        <button
+                        {/* <button
                             className='menu-nav-button drink-nav-button'
                             onClick={() => scrollToSection('Cocktails')}
-                        >
+                        > */}
+                        <button className='menu-nav-button' onClick={() => scrollToSection(currentLanguage === 'english' ? 'Cocktails' : 'Cócteles')}>
                             {content.cocktails}
                         </button>
                     </div>
@@ -100,28 +113,31 @@ export default function DrinksMenuNav({ sectionRefsDrinks }) {
 
                 <div className='second-three-menu-nav-buttons'>
                     <div>
-                        <button
+                        {/* <button
                             className='menu-nav-button drink-nav-button'
                             onClick={() => scrollToSection('Fall Specials')}
-                        >
+                        > */}
+                        <button className='menu-nav-button' onClick={() => scrollToSection(currentLanguage === 'english' ? 'Fall Specials' : 'Especiales de Otoño')}>
                             {content.fallSpecials}
                         </button>
                     </div>
 
                     <div>
-                        <button
+                        {/* <button
                             className='menu-nav-button drink-nav-button'
                             onClick={() => scrollToSection('Beers')}
-                        >
+                        > */}
+                        <button className='menu-nav-button' onClick={() => scrollToSection(currentLanguage === 'english' ? 'Beers' : 'Cervezas')}>
                             {content.beers}
                         </button>
                     </div>
 
                     <div>
-                        <button
+                        {/* <button
                             className='menu-nav-button drink-nav-button'
                             onClick={() => scrollToSection('Soft Drinks')}
-                        >
+                        > */}
+                        <button className='menu-nav-button' onClick={() => scrollToSection(currentLanguage === 'english' ? 'Soft Drinks' : 'Refrescos')}>
                             {content.softDrinks}
                         </button>
                     </div>
