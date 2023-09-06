@@ -41,7 +41,9 @@
 .individual-testimonial {
     display: flex;
     flex-direction: column;
-    background-color: white;
+    /* background-color: white; */
+    /* background-color: rgb(255, 238, 206); */
+
     padding: 15px 20px;
     font-family: Karla, sans-serif;
     width: 200px;

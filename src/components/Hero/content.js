@@ -18,7 +18,7 @@ export const spanishContent = {
     description2: 'Sin Fronteras Cafe es un restaurante Mexicano-Latino Americano localizado en Annapolis, Maryland. Nos especializamos en servir comida auténtica Mexicana y Latino Americana con un toque de Miami. Nuestras recetas fueron inspiradas por comida auténtica que disfrutamos en Latino América y México y nuestras margaritas son consideradas las mejores en la ciudad!',
     hours: 'Lunes - Sábado: 11:00am a 9:00pm',
     hoursSunday: 'Domingo: 11:00am a 8:00pm',
-    viewServices: 'Ver Servicios',
+    viewServices: 'Ver Menú',
     viewReviews: 'Ver Testimonios',
     leaveReview: '¡Califique su Visita!',
     contactHeading: 'Contáctenos'

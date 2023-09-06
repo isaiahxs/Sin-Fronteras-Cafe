@@ -87,7 +87,7 @@ export const menuEnglishData = {
         },
         {
             // gluten free
-            name: "2 Chicken Colombian Empanadas",
+            name: "2 Chicken Colombian Empanadas (Gluten Free)",
             price: "$8.99",
             description: `Served with Aji Sauce.`,
             options: []
@@ -408,7 +408,7 @@ export const menuSpanishData = {
         },
         {
             // Sin gluten
-            name: "2 Empanadas Colombianas de Pollo",
+            name: "2 Empanadas Colombianas de Pollo (Sin Gluten)",
             price: "$8.99",
             description: `Servidas con Salsa Aji.`,
             options: []

@@ -88,3 +88,12 @@ button:hover {
   font-family: 'Inknut Antiqua', serif;
   /* font-weight: lighter; */
 }
+
+.section-below-hero,
+.food-section,
+.drink-section,
+.individual-testimonial {
+  /* background-color: rgb(255, 245, 225) !important; */
+  background-color: rgb(255, 238, 206);
+
+}

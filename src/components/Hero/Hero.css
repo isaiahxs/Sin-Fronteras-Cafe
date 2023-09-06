@@ -43,6 +43,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 10px;
 }
 
 .view-services-hero,
@@ -57,9 +58,17 @@
     margin-bottom: 5px;
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 950px) {
     .hero-information {
-        /* bottom: 300px; */
+        bottom: 150px;
+        margin-bottom: -150px;
+    }
+}
+
+@media screen and (min-width: 1250px) {
+    .hero-information {
+        bottom: 350px;
+        margin-bottom: -350px;
     }
 }
 
@@ -93,12 +102,12 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding: 10px;
-    max-width: 800px;
+    /* padding: 10px; */
+    max-width: 700px;
     margin: auto;
-    /* background-color: white; */
-    /* border: 2px solid black; */
-    /* margin: 20px; */
+    background-color: rgb(255, 238, 206);
+    border: 2px solid black;
+    margin-top: 20px;
 }
 
 .welcome {
