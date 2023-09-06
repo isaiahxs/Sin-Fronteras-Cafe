@@ -22,35 +22,61 @@ export default function Hero() {
         const yOffset = -110;
         const topOffset = sectionElement.getBoundingClientRect().top + window.scrollY + yOffset;
         window.scrollTo({ top: topOffset, behavior: 'smooth' });
-        // sectionElement.scrollIntoView({ behavior: 'smooth' });
     };
 
     return (
         <header className='hero-container' id='hero'>
+            <div className='nav-placeholder'></div>
             <div className='hero-section'>
-                <div className='hero-information'>
-                    {/* <button className='language-toggle-button' onClick={toggleLanguage}>
-                        {currentLanguage === 'english' ? 'Español' : 'English'}
-                    </button> */}
+                {/* <div className='hero-information'>
                     <img src={fajitas} className='hero-background' alt='Fajitas Background' />
                     <div className='hero-text-section'>
                         <h1 className='title'>{content.title}</h1>
                         <h2 className='location'>{content.location}</h2>
-                        {/* <button className='language-toggle-button' onClick={toggleLanguage}>
-                            {currentLanguage === 'english' ? 'Español' : 'English'}
-                        </button> */}
+                    </div>
+                </div> */}
+
+                <div className='hero-information'>
+                    <img src={fajitas} className='hero-background' alt='Fajitas Background' />
+                    {/* <div className='hero-text-section'>
+                        <h1 className='title'>{content.title}</h1>
+                        <h2 className='location'>{content.location}</h2>
+                    </div> */}
+                    <div className='hero-text-section hero-contact-section'>
+
+                        <div className='hero-text-section'>
+                            <h1 className='title overlay'>{content.title}</h1>
+                            <h2 className='location overlay'>{content.location}</h2>
+                        </div>
+                        {/* <h3 className='contact-information'>
+                            <div className='hero-address'>
+                                <img src={map_pin} className='footer-icon' alt='Map Pin' />
+                                2129 Forest Dr. Annapolis, MD 21401
+                            </div>
+                            <div className='hero-phone'>
+                                <img src={phone} className='footer-icon' alt='Phone Icon' />
+                                (410) 266-0013
+                            </div>
+                        </h3> */}
+
+                        {/* <h3 className='description description-hours urbanist'>
+                            {content.hours}
+                        </h3>
+
+                        <h3 className='description description-hours description-hours-bottom urbanist'>
+                            {content.hoursSunday}
+                        </h3> */}
                     </div>
                 </div>
 
                 <div className='section-below-hero'>
-                    {/* <button className='language-toggle-button' onClick={toggleLanguage}>
-                        {currentLanguage === 'english' ? 'Español' : 'English'}
-                    </button> */}
-
                     <div className='hero-descriptions-container'>
-                        {/* <h3 className='description welcome urbanist'>
-                            {content.description}
-                        </h3> */}
+
+                        <div className='hero-header-section'>
+                            {/* <h1 className='title'>{content.title}</h1> */}
+                            {/* <h2 className='location'>{content.location}</h2> */}
+                        </div>
+
                         <button className='language-toggle-button' onClick={toggleLanguage}>
                             {currentLanguage === 'english' ? 'Español' : 'English'}
                         </button>
@@ -59,24 +85,24 @@ export default function Hero() {
                             {content.description2}
                         </h3>
 
-                        <h3 className='contact-information'>
+                        {/* <img src={map_pin} className='footer-icon' alt='Map Pin' /> */}
+                        {/* <img src={phone} className='footer-icon' alt='Phone Icon' /> */}
+                        {/* <h3 className='contact-information'>
                             <div className='hero-address'>
-                                {/* <img src={map_pin} className='footer-icon' alt='Map Pin' /> */}
                                 2129 Forest Dr. Annapolis, MD 21401
                             </div>
                             <div className='hero-phone'>
-                                {/* <img src={phone} className='footer-icon' alt='Phone Icon' /> */}
                                 (410) 266-0013
                             </div>
-                        </h3>
+                        </h3> */}
 
-                        <h3 className='description description-hours urbanist'>
+                        {/* <h3 className='description description-hours urbanist'>
                             {content.hours}
                         </h3>
 
                         <h3 className='description description-hours description-hours-bottom urbanist'>
                             {content.hoursSunday}
-                        </h3>
+                        </h3> */}
                     </div>
 
                     <div className='hero-buttons-container'>
@@ -94,6 +120,8 @@ export default function Hero() {
                         </a>
                     </div>
                 </div>
+
+
             </div>
         </header>
     )

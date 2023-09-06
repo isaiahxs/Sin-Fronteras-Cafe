@@ -1,42 +1,113 @@
 .hero-section {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+    justify-content: space-around;
+    margin: auto;
+    width: 95%;
+    max-width: 1000px;
     /* padding: 10px; */
+    /* margin-top: 60px; */
 }
 
+.nav-placeholder {
+    height: 100px !important;
+}
+
+.hero-header-section {
+    color: black;
+}
+
+/* for overlay and gradient */
 .hero-text-section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: linear-gradient(to top, rgba(0, 0, 0, 1.0) 20%, rgba(0, 0, 0, 0));
-    width: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 1.0) 40%, rgba(0, 0, 0, 0));
     z-index: 1;
     position: absolute;
     bottom: 0%;
     text-align: center;
+    color: white;
+    width: 100%;
+}
+
+.overlay {
+    color: white !important;
+}
+
+/* .hero-text-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    bottom: 0%;
+    text-align: center;
+    color: black;
+} */
+
+.hero-information {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    align-items: center;
+    position: relative;
+}
+
+.hero-contact-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
     /* padding: 10px; */
+    width: 100%;
 }
 
 .hero-background {
     height: auto;
-    /* height: 900px; */
     width: 100%;
-    z-index: -1;
-    /* border-bottom: 2px solid black; */
 }
 
-.hero-information {
+/* .hero-information {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
     position: relative;
-    /* bottom: 300px; */
-    /* bottom: 50%; */
-    /* margin-bottom: 30px; */
 }
+
+.hero-text-section,
+.hero-contact-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+} */
 
 .hero-descriptions-container {
-    padding: 20px;
+    padding: 10px;
+}
+
+.description {
+    margin-top: 10px;
+    margin-bottom: 0px;
 }
 
 .description-hours {
     margin-bottom: 0px;
     margin-top: 0px;
+    padding: 10px;
+    padding-bottom: 0px;
+}
+
+.description-hours-bottom {
+    padding-top: 0px;
+    padding-bottom: 10px;
+}
+
+.contact-information {
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .hero-buttons-container {
@@ -44,6 +115,8 @@
     flex-direction: column;
     align-items: center;
     padding: 10px;
+    padding-top: 0px;
+    margin-top: 0px;
 }
 
 .view-services-hero,
@@ -58,43 +131,26 @@
     margin-bottom: 5px;
 }
 
-@media screen and (min-width: 950px) {
-    .hero-information {
-        bottom: 150px;
-        margin-bottom: -150px;
-    }
-}
-
-@media screen and (min-width: 1250px) {
-    .hero-information {
-        bottom: 350px;
-        margin-bottom: -350px;
-    }
-}
-
 .title,
 .location {
-    color: #fff;
-    /* font-family: 'Cormorant SC', serif; */
-    /* font-family: 'David Libre', serif; */
-    /* font-family: 'Goudy Bookletter 1911', serif; */
-    /* font-family: 'IM Fell English SC', serif; */
-    /* font-family: 'Inknut Antiqua', serif; */
-    /* font-family: 'Kaushan Script', cursive; */
-    /* font-family: 'Seaweed Script', cursive; */
+    color: black;
     font-family: 'Vollkorn SC', serif;
-    /* font-family: 'Yesteryear', cursive; */
 }
 
 .title {
-    font-size: 4.0rem;
+    font-size: 3.6rem;
     margin-bottom: 0px;
     margin-top: 0px;
 }
 
 .location {
     margin-top: 0px;
-    font-size: 3.0rem;
+    font-size: 2.3rem;
+    margin-bottom: 10px;
+}
+
+.language-toggle-button {
+    font-size: 1.1rem;
 }
 
 .section-below-hero {
@@ -102,29 +158,46 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
-    /* padding: 10px; */
     max-width: 700px;
     margin: auto;
-    background-color: rgb(255, 238, 206);
-    border: 2px solid black;
-    margin-top: 20px;
 }
 
 .welcome {
-    /* color: #3e8a0f; */
     font-family: 'Vollkorn SC', serif;
     font-size: 2.0rem;
     margin-top: 10px;
     margin-bottom: 10px;
-    /* font-weight: bolder; */
+}
+
+@media screen and (min-width: 950px) {
+    .hero-section {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (min-width: 495px) {
+    .nav-placeholder {
+        height: 130px;
+    }
 }
 
 @media screen and (max-width: 800px) {
     .title {
-        font-size: 3.0rem;
+        font-size: 2.6rem;
     }
 
     .location {
-        font-size: 2.5rem;
+        font-size: 2.1rem;
+    }
+}
+
+@media screen and (max-width: 530px) {
+    .title {
+        font-size: 2.0rem;
+    }
+
+    .location {
+        font-size: 1.5rem;
     }
 }
