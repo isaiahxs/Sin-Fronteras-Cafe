@@ -7,6 +7,7 @@ import './FoodMenu.css';
 export default function FoodMenu() {
     const { currentLanguage, setCurrentLanguage } = useLanguage();
     const content = currentLanguage === 'english' ? englishContent : spanishContent;
+    const menuData = currentLanguage === 'english' ? menuEnglishData : menuSpanishData;
     const sectionRefs = {};
 
     const renderMenuItem = (section, item) => (
@@ -35,10 +36,12 @@ export default function FoodMenu() {
             <h2 className='menu-header'>{content.foodMenu}</h2>
             <div className='food-menu'>
                 <FoodMenuNav sectionRefs={sectionRefs} />
-                {Object.keys(menuEnglishData).map((section) => (
-                    <div key={section} className='menu-section' ref={(el) => (sectionRefs[section] = el)}>
+                {Object.keys(menuData).map((section) => (
+                    // <div key={section} className='menu-section' ref={(el) => (sectionRefs[section] = el)}>
+                    <div key={section} className='menu-section' ref={(el) => (sectionRefs[section] = el)} id={section.toLowerCase().replace(' ', '-')}>
+
                         <h2 className='section-header'>{section}</h2>
-                        {menuEnglishData[section].map((item) => renderMenuItem(section, item))}
+                        {menuData[section].map((item) => renderMenuItem(section, item))}
                     </div>
                 ))}
                 <div className='gluten-warning-container'>

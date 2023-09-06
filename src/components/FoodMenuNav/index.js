@@ -56,16 +56,22 @@ export default function FoodMenuNav({ sectionRefs }) {
         };
     }, []);
 
-    // const navBarClass = isScrollingDown ? 'nav-bar hidden' : 'nav-bar';
     const navBarClass = isScrollingDown ? 'menu-nav sticky' : 'menu-nav up';
 
-    // const navBarClassUp = isScrollingUp ? 'menu-nav sticky up' : 'menu-nav';
+    // const scrollToSection = (section) => {
+    //     const sectionElement = sectionRefs[section];
+    //     if (sectionElement) {
+    //         // sectionElement.scrollIntoView({ behavior: 'smooth' });
+
+    //         const yOffset = -170;
+    //         const topOffset = sectionElement.getBoundingClientRect().top + window.scrollY + yOffset;
+    //         window.scrollTo({ top: topOffset, behavior: 'smooth' });
+    //     }
+    // };
 
     const scrollToSection = (section) => {
-        const sectionElement = sectionRefs[section];
+        const sectionElement = document.getElementById(section.toLowerCase().replace(' ', '-'));
         if (sectionElement) {
-            // sectionElement.scrollIntoView({ behavior: 'smooth' });
-
             const yOffset = -170;
             const topOffset = sectionElement.getBoundingClientRect().top + window.scrollY + yOffset;
             window.scrollTo({ top: topOffset, behavior: 'smooth' });
@@ -77,13 +83,13 @@ export default function FoodMenuNav({ sectionRefs }) {
             <div className='menu-nav-options'>
                 <div className='first-two-menu-buttons'>
                     <div>
-                        <button className='menu-nav-button' onClick={() => scrollToSection('Appetizers')}>
+                        <button className='menu-nav-button' onClick={() => scrollToSection(currentLanguage === 'english' ? 'Appetizers' : 'Aperitivos')}>
                             {content.appetizers}
                         </button>
                     </div>
 
                     <div>
-                        <button className='menu-nav-button' onClick={() => scrollToSection('Salads')}>
+                        <button className='menu-nav-button' onClick={() => scrollToSection(currentLanguage === 'english' ? 'Salads' : 'Ensaladas')}>
                             {content.salads}
                         </button>
                     </div>
@@ -93,7 +99,7 @@ export default function FoodMenuNav({ sectionRefs }) {
                     <div>
                         <button
                             className='menu-nav-button'
-                            onClick={() => scrollToSection('Entrees')}
+                            onClick={() => scrollToSection(currentLanguage === 'english' ? 'Entrees' : 'Platos Principales')}
                         >
                             {content.entrees}
                         </button>
@@ -102,7 +108,7 @@ export default function FoodMenuNav({ sectionRefs }) {
                     <div>
                         <button
                             className='menu-nav-button'
-                            onClick={() => scrollToSection('Desserts')}
+                            onClick={() => scrollToSection(currentLanguage === 'english' ? 'Desserts' : 'Postres')}
                         >
                             {content.desserts}
                         </button>
