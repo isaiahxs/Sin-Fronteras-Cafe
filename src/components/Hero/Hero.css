@@ -87,6 +87,7 @@
 .hero-descriptions-container {
     padding: 10px;
     padding-bottom: 0px;
+    line-height: 2.0rem;
 }
 
 .description {

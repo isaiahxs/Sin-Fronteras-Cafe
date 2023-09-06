@@ -15,100 +15,100 @@ export const menuDrinksEnglishData = {
         {
             name: `Oyster Bay Rosé
             `,
-            price: "$7.50 / $24.00",
+            price: "",
             description: `Oyster Bay's cool climate Marlborough Rosé exudes summer cherry and fragrant blossom notes with a burst of red berries and a lively citrus zest.
             `,
-            options: ["Glass - ", "Bottle"]
+            options: ["Glass $7.50 - ", "Bottle $24.00"]
         },
         {
             name: `Tomaiolo Pinot Grigio, Italy
             `,
-            price: "$7.99 / $24.99",
+            price: "",
             description: `Well balanced fruity flavors with a soft, dry finish.
             `,
-            options: ["Glass - ", "Bottle"]
+            options: ["Glass $7.99  - ", "Bottle $24.99"]
         },
         {
             name: `Do Zoe Albarino, Spain
             `,
-            price: "$7.99 / $24.99",
+            price: "",
             description: `Aromas of fruit, white flowers and mineral nuances which come from the vineyard. Round, well-balanced acidity maintaining a citrus finish.
             `,
-            options: ["Glass - ", "Bottle"]
+            options: ["Glass $7.99 - ", "Bottle $24.99"]
         },
         {
             name: `Enate "234" Chardonnay
             `,
-            price: "$8.99 / $29.99",
+            price: "",
             description: `Complex and intense aromas of green apple, ripe peach, fennel, guava and passion fruit. Round but clean with bracing minerality.
             `,
-            options: ["Glass - ", "Bottle"]
+            options: ["Glass $8.99 - ", "Bottle $29.99"]
         },
         {
             name: `Alto Tierruca Reserve Sauvignon Blanc
             `,
-            price: "$7.00 / $20.00",
+            price: "",
             description: `This wine expresses rich flavors of lime in balance with fresh acidity in this well-balanced wine. Mineral notes resonate into the long finish.
             `,
-            options: ["Glass - ", "Bottle"]
+            options: ["Glass $7.00 - ", "Bottle $20.00"]
         }
     ],
     "Red Wines": [
         {
             name: `Old Soul Cabernet
             `,
-            price: "$7.99 / $24.99",
+            price: "",
             description: `In this wine you will find purity and elegance, red berry fruit, black cherry, licorice and black pepper all wrapped together with hints of vanilla notes.
             `,
-            options: ["Glass - ", "Bottle"]
+            options: ["Glass $7.99 - ", "Bottle $24.99"]
         },
         {
             name: `Monte Degli Angeli Pinot Noir, Italy
             `,
-            price: "$7.99 / $24.99",
+            price: "",
             description: `Notes of cherry, strawberry and raspberry. rich, silky and smooth with soft tannins.
             `,
-            options: ["Glass - ", "Bottle"]
+            options: ["Glass $7.99 - ", "Bottle $24.99"]
         },
         {
             name: `Enate Tempranillo, Spain
             `,
-            price: "$7.99 / $24.99",
+            price: "",
             description: `Blackberries and cherries, strawberry, caramel and licorice. Soft tannins, fresh acidity to give it a rounded creamy finish.
             `,
-            options: ["Glass - ", "Bottle"]
+            options: ["Glass $7.99 - ", "Bottle $24.99"]
         },
         {
             name: `Agua De Piedra Malbec, Argentina
             `,
-            price: "$7.99 / $24.99",
+            price: "",
             description: `Rich berry fruit smooth spice and earthiness with soft tannins.
             `,
-            options: ["Glass - ", "Bottle"]
+            options: ["Glass $7.99 - ", "Bottle $24.99"]
         },
         {
             name: `Mercedes Egueren Cabernet Sauvignon, Spain
             `,
-            price: "$7.99 / $24.99",
+            price: "",
             description: `Blackcurrant, licorice, smoke and light herbal flavors, polished texture and a long, fresh finish.
             `,
-            options: ["Glass - ", "Bottle"]
+            options: ["Glass $7.99 - ", "Bottle $24.99"]
         },
         {
             name: `Enate Crianza, Spain
             `,
-            price: "$7.99 / $24.99",
+            price: "",
             description: `Intense, complex aroma, smoky, spicy notes on a background of ripe and red fruit. Balanced tannin, structure, a long finish including fine toasty notes.
             `,
-            options: ["Glass - ", "Bottle"]
+            options: ["Glass $7.99 - ", "Bottle $24.99"]
         },
         {
             name: `Enate Cabernet, Spain
             `,
-            price: "$8.99 / $29.99",
+            price: "",
             description: `Complex nose of blackcurrant, blackberry and violet with traces of pepper and vanilla. Flavorful in the mouth, with toasty notes.
             `,
-            options: ["Glass - ", "Bottle"]
+            options: ["Glass $8.99 - ", "Bottle $29.99"]
         },
         {
             name: `White and Red Sangria
@@ -318,100 +318,100 @@ export const menuDrinksSpanishData = {
         {
             name: `Oyster Bay Rosé
             `,
-            price: "$7.50 / $24.00",
+            price: "",
             description: `El Rosé de Oyster Bay, de clima fresco en Marlborough, irradia notas de cereza de verano y fragantes flores con un estallido de frutos rojos y un vivo toque cítrico.
             `,
-            options: ["Copa - ", "Botella"]
+            options: ["Copa $7.50 - ", "Botella $24.00"]
         },
         {
             name: `Tomaiolo Pinot Grigio, Italia
             `,
-            price: "$7.99 / $24.99",
+            price: "",
             description: `Sabores afrutados bien equilibrados con un final suave y seco.
             `,
-            options: ["Copa - ", "Botella"]
+            options: ["Copa $7.99 - ", "Botella $24.99"]
         },
         {
             name: `Do Zoe Albariño, España
             `,
-            price: "$7.99 / $24.99",
+            price: "",
             description: `Aromas de frutas, flores blancas y matices minerales que provienen del viñedo. Acidez redonda y equilibrada que mantiene un final cítrico.
             `,
-            options: ["Copa - ", "Botella"]
+            options: ["Copa $7.99 - ", "Botella $24.99"]
         },
         {
             name: `Enate "234" Chardonnay
             `,
-            price: "$8.99 / $29.99",
+            price: "",
             description: `Aromas complejos e intensos de manzana verde, melocotón maduro, hinojo, guayaba y maracuyá. Redondo pero limpio con una mineralidad vivificante.
             `,
-            options: ["Copa - ", "Botella"]
+            options: ["Copa $8.99 - ", "Botella $29.99"]
         },
         {
             name: `Alto Tierruca Reserva Sauvignon Blanc
             `,
-            price: "$7.00 / $20.00",
+            price: "",
             description: `Este vino expresa sabores intensos de lima en equilibrio con una fresca acidez en este vino bien equilibrado. Notas minerales resuenan en el largo final.
             `,
-            options: ["Copa - ", "Botella"]
+            options: ["Copa $7.00 - ", "Botella $20.00"]
         }
     ],
     "Vinos Rojos": [
         {
             name: `Old Soul Cabernet
             `,
-            price: "$7.99 / $24.99",
+            price: "",
             description: `En este vino encontrarás pureza y elegancia, frutas rojas, cereza negra, regaliz y pimienta negra, todo envuelto con toques de vainilla.
             `,
-            options: ["Copa - ", "Botella"]
+            options: ["Copa $7.99 - ", "Botella $24.99"]
         },
         {
             name: `Monte Degli Angeli Pinot Noir, Italia
             `,
-            price: "$7.99 / $24.99",
+            price: "",
             description: `Notas de cereza, fresa y frambuesa. Rico, sedoso y suave con taninos suaves.
             `,
-            options: ["Copa - ", "Botella"]
+            options: ["Copa $7.99 - ", "Botella $24.99"]
         },
         {
             name: `Enate Tempranillo, España
             `,
-            price: "$7.99 / $24.99",
+            price: "",
             description: `Moras y cerezas, fresa, caramelo y regaliz. Taninos suaves, acidez fresca que le da un final redondeado y cremoso.
             `,
-            options: ["Copa - ", "Botella"]
+            options: ["Copa $7.99 - ", "Botella $24.99"]
         },
         {
             name: `Agua De Piedra Malbec, Argentina
             `,
-            price: "$7.99 / $24.99",
+            price: "",
             description: `Rica fruta de bayas, especias suaves y terrosidad con taninos suaves.
             `,
-            options: ["Copa - ", "Botella"]
+            options: ["Copa $7.99 - ", "Botella $24.99"]
         },
         {
             name: `Mercedes Egueren Cabernet Sauvignon, España
             `,
-            price: "$7.99 / $24.99",
+            price: "",
             description: `Grosella negra, regaliz, humo y sabores herbales ligeros, textura pulida y un final fresco y largo.
             `,
-            options: ["Copa - ", "Botella"]
+            options: ["Copa $7.99 - ", "Botella $24.99"]
         },
         {
             name: `Enate Crianza, España
             `,
-            price: "$7.99 / $24.99",
+            price: "",
             description: `Aroma intenso y complejo, notas ahumadas, especiadas sobre un fondo de fruta madura y roja. Taninos equilibrados, estructura, un largo final con finas notas tostadas.
             `,
-            options: ["Copa - ", "Botella"]
+            options: ["Copa $7.99 - ", "Botella $24.99"]
         },
         {
             name: `Enate Cabernet, España
             `,
-            price: "$8.99 / $29.99",
+            price: "",
             description: `Compleja nariz de grosella negra, mora y violeta con trazas de pimienta y vainilla. Sabroso en boca, con notas tostadas.
             `,
-            options: ["Copa - ", "Botella"]
+            options: ["Copa $8.99 - ", "Botella $29.99"]
         },
         {
             name: `Sangría Blanca y Roja
@@ -453,7 +453,7 @@ export const menuDrinksSpanishData = {
             price: "$10.99",
             description: `Tequila Conquistador combinado con triple seco y lima. En las rocas o congelado, con o sin borde de sal.
             `,
-            options: ["De alta calidad +$3 - ", "En las rocas - ", "Congelado - ", "Con borde de sal - ", "Sin borde de sal"]
+            options: ["Top shelf +$3 - ", "En las rocas - ", "Congelado - ", "Con borde de sal - ", "Sin borde de sal"]
         },
         {
             name: `Margarita Pequeño
