@@ -2,10 +2,10 @@
     display: flex;
     flex-direction: column;
     border: 2px solid black;
-    justify-content: space-around;
+    align-items: center;
     margin: auto;
-    width: 95%;
-    max-width: 1000px;
+    width: 91%;
+    max-width: 800px;
     /* padding: 10px; */
     /* margin-top: 60px; */
 }
@@ -110,6 +110,26 @@
     margin-bottom: 10px;
 }
 
+.hero-address,
+.hero-phone {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-map-icon,
+.hero-phone-icon,
+.hero-facebook-icon {
+    /* margin-top: 10px !important; */
+    margin-right: 5px;
+    height: 25px;
+    width: auto;
+}
+
+.hero-map-icon {
+    /* margin-left: 10px; */
+}
+
 .hero-buttons-container {
     display: flex;
     flex-direction: column;
@@ -123,7 +143,7 @@
 .view-reviews-hero,
 .leave-review-hero {
     font-size: 1.1rem;
-    width: 200px;
+    width: 220px;
 }
 
 .view-reviews-hero {
@@ -168,13 +188,6 @@
     font-size: 2.0rem;
     margin-top: 10px;
     margin-bottom: 10px;
-}
-
-@media screen and (min-width: 950px) {
-    .hero-section {
-        flex-direction: column;
-        align-items: center;
-    }
 }
 
 @media screen and (min-width: 495px) {

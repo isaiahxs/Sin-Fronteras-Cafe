@@ -2,10 +2,10 @@ import React, { useState } from 'react';
 import { useLanguage } from '../../LanguageContext';
 import { englishContent, spanishContent } from './content';
 import { Link } from 'react-router-dom';
-import fajitas from '../../assets/images/fajitas.avif';
-import map_pin from '../../assets/icons/map-pin.svg';
-import phone from '../../assets/icons/phone-icon.svg';
-import facebook from '../../assets/icons/facebook-logo.svg';
+import fajitas from '../../assets/images/fajitas-jpeg.jpg';
+import map_pin from '../../assets/icons/black-map-pin.png';
+import phone from '../../assets/icons/black-phone.png';
+import facebook from '../../assets/icons/black-facebook.png';
 import './Hero.css';
 
 export default function Hero() {
@@ -28,54 +28,23 @@ export default function Hero() {
         <header className='hero-container' id='hero'>
             <div className='nav-placeholder'></div>
             <div className='hero-section'>
-                {/* <div className='hero-information'>
-                    <img src={fajitas} className='hero-background' alt='Fajitas Background' />
-                    <div className='hero-text-section'>
-                        <h1 className='title'>{content.title}</h1>
-                        <h2 className='location'>{content.location}</h2>
-                    </div>
-                </div> */}
-
                 <div className='hero-information'>
                     <img src={fajitas} className='hero-background' alt='Fajitas Background' />
-                    {/* <div className='hero-text-section'>
-                        <h1 className='title'>{content.title}</h1>
-                        <h2 className='location'>{content.location}</h2>
-                    </div> */}
                     <div className='hero-text-section hero-contact-section'>
-
                         <div className='hero-text-section'>
                             <h1 className='title overlay'>{content.title}</h1>
                             <h2 className='location overlay'>{content.location}</h2>
                         </div>
-                        {/* <h3 className='contact-information'>
-                            <div className='hero-address'>
-                                <img src={map_pin} className='footer-icon' alt='Map Pin' />
-                                2129 Forest Dr. Annapolis, MD 21401
-                            </div>
-                            <div className='hero-phone'>
-                                <img src={phone} className='footer-icon' alt='Phone Icon' />
-                                (410) 266-0013
-                            </div>
-                        </h3> */}
-
-                        {/* <h3 className='description description-hours urbanist'>
-                            {content.hours}
-                        </h3>
-
-                        <h3 className='description description-hours description-hours-bottom urbanist'>
-                            {content.hoursSunday}
-                        </h3> */}
                     </div>
                 </div>
 
                 <div className='section-below-hero'>
                     <div className='hero-descriptions-container'>
 
-                        <div className='hero-header-section'>
-                            {/* <h1 className='title'>{content.title}</h1> */}
-                            {/* <h2 className='location'>{content.location}</h2> */}
-                        </div>
+                        {/* <div className='hero-header-section'> */}
+                        {/* <h1 className='title'>{content.title}</h1> */}
+                        {/* <h2 className='location'>{content.location}</h2> */}
+                        {/* </div> */}
 
                         <button className='language-toggle-button' onClick={toggleLanguage}>
                             {currentLanguage === 'english' ? 'Español' : 'English'}
@@ -85,24 +54,33 @@ export default function Hero() {
                             {content.description2}
                         </h3>
 
-                        {/* <img src={map_pin} className='footer-icon' alt='Map Pin' /> */}
-                        {/* <img src={phone} className='footer-icon' alt='Phone Icon' /> */}
                         <h3 className='contact-information'>
                             <div className='hero-address'>
-                                2129 Forest Dr. Annapolis, MD 21401
+                                <a href="https://www.google.com/maps/place/Sin+Fronteras/@38.9775203,-76.5394309,17z/data=!3m1!4b1!4m6!3m5!1s0x89b7f6ce8f43a82f:0x43022ee12cca4c62!8m2!3d38.9775162!4d-76.536856!16s%2Fg%2F1tpf80bs?entry=ttu" target='_blank' rel='noopener noreferrer'>
+
+                                    <span>
+                                        <img src={map_pin} className='footer-icon hero-map-icon' alt='Map Pin' />
+                                        2129 Forest Dr. Annapolis, MD 21401
+                                    </span>
+                                </a>
                             </div>
                             <div className='hero-phone'>
-                                (410) 266-0013
+                                <div className='hero-img-container'>
+                                    <a href='tel:+14102660013'>
+                                        <span>
+                                            <img src={phone} className='footer-icon hero-phone-icon' alt='Phone Icon' />
+                                            (410) 266-0013
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div className='hero-facebook'>
+                                <a href="https://www.facebook.com/sinfronterascafe/?ref=page_internal" target='_blank' rel='noopener noreferrer'>
+                                    <img src={facebook} className='footer-icon hero-facebook-icon' alt='Facebook Logo' />
+                                    Facebook
+                                </a>
                             </div>
                         </h3>
-
-                        {/* <h3 className='description description-hours urbanist'>
-                            {content.hours}
-                        </h3>
-
-                        <h3 className='description description-hours description-hours-bottom urbanist'>
-                            {content.hoursSunday}
-                        </h3> */}
                     </div>
 
                     <div className='hero-buttons-container'>
@@ -120,8 +98,6 @@ export default function Hero() {
                         </a>
                     </div>
                 </div>
-
-
             </div>
         </header>
     )
