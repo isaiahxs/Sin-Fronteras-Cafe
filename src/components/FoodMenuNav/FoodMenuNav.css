@@ -36,8 +36,8 @@
 }
 
 .menu-nav-button {
-    width: 120px;
-    font-size: 1.0rem;
+    width: 140px;
+    font-size: 0.9rem;
     border: 2px solid white;
 }
 
@@ -78,13 +78,15 @@
 @media screen and (max-width: 495px) {
     .menu-nav.sticky {
         top: 63px;
-        padding-top: 5px;
-        padding-bottom: 5px;
+        padding-top: 10px;
+        padding-bottom: 10px;
     }
 }
 
-/* @media screen and (max-width: 430px) {
-    .menu-nav-button {
-        width: 110px;
+@media screen and (min-width: 495px) {
+    .menu-nav.sticky {
+        top: 80px;
+        padding-top: 10px;
+        padding-bottom: 10px;
     }
-} */
+}

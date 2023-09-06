@@ -75,7 +75,7 @@ export default function DrinksMenuNav({ sectionRefsDrinks }) {
     const scrollToSection = (section) => {
         const sectionElement = document.getElementById(section.toLowerCase().replace(' ', '-'));
         if (sectionElement) {
-            const yOffset = -220;
+            const yOffset = -210;
             const topOffset = sectionElement.getBoundingClientRect().top + window.scrollY + yOffset;
             window.scrollTo({ top: topOffset, behavior: 'smooth' });
         }

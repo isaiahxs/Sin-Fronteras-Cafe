@@ -36,9 +36,13 @@
 
 .panel-language-button,
 .panel-button {
-    width: 195px !important;
+    width: 195px;
     /* font-size: 1.0rem !important; */
     padding: 0px 10px;
+}
+
+.panel-language-button {
+    border: 2px solid white;
 }
 
 .nav-bar.hidden {
@@ -81,7 +85,8 @@
     border: none;
     /* font-weight: 500; */
     border: 2px solid #c6133e;
-    width: 156px;
+    /* width: 210px !important; */
+    font-size: 1.1rem;
 }
 
 .nav-button.active {
@@ -184,11 +189,7 @@
     align-items: center;
 }
 
-.panel-language-button {
-    width: 156px;
-    border: 2px solid white;
-    font-size: 1.0rem;
-}
+
 
 .panel-logo {
     cursor: default !important;

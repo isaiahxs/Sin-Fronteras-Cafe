@@ -73,7 +73,7 @@ export default function FoodMenuNav({ sectionRefs }) {
     const scrollToSection = (section) => {
         const sectionElement = document.getElementById(section.toLowerCase().replace(' ', '-'));
         if (sectionElement) {
-            const yOffset = -170;
+            const yOffset = -210;
             const topOffset = sectionElement.getBoundingClientRect().top + window.scrollY + yOffset;
             window.scrollTo({ top: topOffset, behavior: 'smooth' });
         }
