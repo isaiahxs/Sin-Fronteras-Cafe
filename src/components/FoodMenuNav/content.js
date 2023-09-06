@@ -8,6 +8,6 @@ export const englishContent = {
 export const spanishContent = {
     appetizers: 'Aperitivos',
     salads: 'Ensaladas',
-    entrees: 'Platos Principales',
+    entrees: 'Platos Fuertes',
     desserts: 'Postres',
 }

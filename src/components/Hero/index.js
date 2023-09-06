@@ -87,14 +87,14 @@ export default function Hero() {
 
                         {/* <img src={map_pin} className='footer-icon' alt='Map Pin' /> */}
                         {/* <img src={phone} className='footer-icon' alt='Phone Icon' /> */}
-                        {/* <h3 className='contact-information'>
+                        <h3 className='contact-information'>
                             <div className='hero-address'>
                                 2129 Forest Dr. Annapolis, MD 21401
                             </div>
                             <div className='hero-phone'>
                                 (410) 266-0013
                             </div>
-                        </h3> */}
+                        </h3>
 
                         {/* <h3 className='description description-hours urbanist'>
                             {content.hours}

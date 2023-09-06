@@ -64,6 +64,27 @@
 
 @media screen and (max-width: 600px) {
     .menu-nav-button {
-        font-size: 0.8rem;
+        width: 113px;
+        font-size: 0.76rem;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .food-nav-button {
+        width: 115px;
     }
 }
+
+@media screen and (max-width: 495px) {
+    .menu-nav.sticky {
+        top: 63px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+}
+
+/* @media screen and (max-width: 430px) {
+    .menu-nav-button {
+        width: 110px;
+    }
+} */

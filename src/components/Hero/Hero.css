@@ -11,7 +11,7 @@
 }
 
 .nav-placeholder {
-    height: 100px !important;
+    height: 73px !important;
 }
 
 .hero-header-section {
@@ -151,6 +151,7 @@
 
 .language-toggle-button {
     font-size: 1.1rem;
+    /* width: 200px; */
 }
 
 .section-below-hero {
@@ -178,7 +179,7 @@
 
 @media screen and (min-width: 495px) {
     .nav-placeholder {
-        height: 130px;
+        height: 95px !important;
     }
 }
 

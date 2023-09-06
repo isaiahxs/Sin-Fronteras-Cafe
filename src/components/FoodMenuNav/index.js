@@ -58,6 +58,7 @@ export default function FoodMenuNav({ sectionRefs }) {
 
     const navBarClass = isScrollingDown ? 'menu-nav sticky' : 'menu-nav up';
 
+
     // const scrollToSection = (section) => {
     //     const sectionElement = sectionRefs[section];
     //     if (sectionElement) {
@@ -83,13 +84,13 @@ export default function FoodMenuNav({ sectionRefs }) {
             <div className='menu-nav-options'>
                 <div className='first-two-menu-buttons'>
                     <div>
-                        <button className='menu-nav-button' onClick={() => scrollToSection(currentLanguage === 'english' ? 'Appetizers' : 'Aperitivos')}>
+                        <button className='menu-nav-button food-nav-button' onClick={() => scrollToSection(currentLanguage === 'english' ? 'Appetizers' : 'Aperitivos')}>
                             {content.appetizers}
                         </button>
                     </div>
 
                     <div>
-                        <button className='menu-nav-button' onClick={() => scrollToSection(currentLanguage === 'english' ? 'Salads' : 'Ensaladas')}>
+                        <button className='menu-nav-button food-nav-button' onClick={() => scrollToSection(currentLanguage === 'english' ? 'Salads' : 'Ensaladas')}>
                             {content.salads}
                         </button>
                     </div>
@@ -98,7 +99,7 @@ export default function FoodMenuNav({ sectionRefs }) {
                 <div className='second-two-menu-buttons'>
                     <div>
                         <button
-                            className='menu-nav-button'
+                            className='menu-nav-button food-nav-button'
                             onClick={() => scrollToSection(currentLanguage === 'english' ? 'Entrees' : 'Platos Principales')}
                         >
                             {content.entrees}
@@ -107,7 +108,7 @@ export default function FoodMenuNav({ sectionRefs }) {
 
                     <div>
                         <button
-                            className='menu-nav-button'
+                            className='menu-nav-button food-nav-button'
                             onClick={() => scrollToSection(currentLanguage === 'english' ? 'Desserts' : 'Postres')}
                         >
                             {content.desserts}

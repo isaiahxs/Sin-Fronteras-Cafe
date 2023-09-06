@@ -11,7 +11,7 @@ export const spanishContent = {
     whiteWines: 'Vinos Blancos',
     redWines: 'Vinos Rojos',
     cocktails: 'Cócteles',
-    fallSpecials: 'Especiales de Otoño',
+    fallSpecials: 'Especiales',
     beers: 'Cervezas',
     softDrinks: 'Refrescos',
 }
