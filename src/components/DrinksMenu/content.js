@@ -279,7 +279,7 @@ export const menuDrinksEnglishData = {
     ],
     "Soft Drinks": [
         {
-            name: `Coke
+            name: `Coca-Cola
             `,
             price: "$1.95",
             description: `
@@ -287,7 +287,7 @@ export const menuDrinksEnglishData = {
             options: []
         },
         {
-            name: `Diet Coke
+            name: `Diet Coca-Cola
             `,
             price: "$1.95",
             description: `
@@ -313,23 +313,47 @@ export const menuDrinksEnglishData = {
     ]
 };
 
-
-
-
-
-
-
-
-
 export const menuDrinksSpanishData = {
     "Vinos Blancos": [
         {
             name: `Oyster Bay Rosé
             `,
             price: "$7.50 / $24.00",
-            description: `Oyster Bay's cool climate Marlborough Rosé exudes summer cherry and fragrant blossom notes with a burst of red berries and a lively citrus zest.
+            description: `El Rosé de Oyster Bay, de clima fresco en Marlborough, irradia notas de cereza de verano y fragantes flores con un estallido de frutos rojos y un vivo toque cítrico.
             `,
-            options: ["Glass - ", "Bottle"]
+            options: ["Copa - ", "Botella"]
+        },
+        {
+            name: `Tomaiolo Pinot Grigio, Italia
+            `,
+            price: "$7.99 / $24.99",
+            description: `Sabores afrutados bien equilibrados con un final suave y seco.
+            `,
+            options: ["Copa - ", "Botella"]
+        },
+        {
+            name: `Do Zoe Albariño, España
+            `,
+            price: "$7.99 / $24.99",
+            description: `Aromas de frutas, flores blancas y matices minerales que provienen del viñedo. Acidez redonda y equilibrada que mantiene un final cítrico.
+            `,
+            options: ["Copa - ", "Botella"]
+        },
+        {
+            name: `Enate "234" Chardonnay
+            `,
+            price: "$8.99 / $29.99",
+            description: `Aromas complejos e intensos de manzana verde, melocotón maduro, hinojo, guayaba y maracuyá. Redondo pero limpio con una mineralidad vivificante.
+            `,
+            options: ["Copa - ", "Botella"]
+        },
+        {
+            name: `Alto Tierruca Reserva Sauvignon Blanc
+            `,
+            price: "$7.00 / $20.00",
+            description: `Este vino expresa sabores intensos de lima en equilibrio con una fresca acidez en este vino bien equilibrado. Notas minerales resuenan en el largo final.
+            `,
+            options: ["Copa - ", "Botella"]
         }
     ],
     "Vinos Rojos": [
@@ -337,30 +361,150 @@ export const menuDrinksSpanishData = {
             name: `Old Soul Cabernet
             `,
             price: "$7.99 / $24.99",
-            description: `In this wine you will find purity and elegance, red berry fruit, black cherry, licorice and black pepper all wrapped together with hints of vanilla notes.
+            description: `En este vino encontrarás pureza y elegancia, frutas rojas, cereza negra, regaliz y pimienta negra, todo envuelto con toques de vainilla.
             `,
-            options: ["Glass - ", "Bottle"]
-        }
+            options: ["Copa - ", "Botella"]
+        },
+        {
+            name: `Monte Degli Angeli Pinot Noir, Italia
+            `,
+            price: "$7.99 / $24.99",
+            description: `Notas de cereza, fresa y frambuesa. Rico, sedoso y suave con taninos suaves.
+            `,
+            options: ["Copa - ", "Botella"]
+        },
+        {
+            name: `Enate Tempranillo, España
+            `,
+            price: "$7.99 / $24.99",
+            description: `Moras y cerezas, fresa, caramelo y regaliz. Taninos suaves, acidez fresca que le da un final redondeado y cremoso.
+            `,
+            options: ["Copa - ", "Botella"]
+        },
+        {
+            name: `Agua De Piedra Malbec, Argentina
+            `,
+            price: "$7.99 / $24.99",
+            description: `Rica fruta de bayas, especias suaves y terrosidad con taninos suaves.
+            `,
+            options: ["Copa - ", "Botella"]
+        },
+        {
+            name: `Mercedes Egueren Cabernet Sauvignon, España
+            `,
+            price: "$7.99 / $24.99",
+            description: `Grosella negra, regaliz, humo y sabores herbales ligeros, textura pulida y un final fresco y largo.
+            `,
+            options: ["Copa - ", "Botella"]
+        },
+        {
+            name: `Enate Crianza, España
+            `,
+            price: "$7.99 / $24.99",
+            description: `Aroma intenso y complejo, notas ahumadas, especiadas sobre un fondo de fruta madura y roja. Taninos equilibrados, estructura, un largo final con finas notas tostadas.
+            `,
+            options: ["Copa - ", "Botella"]
+        },
+        {
+            name: `Enate Cabernet, España
+            `,
+            price: "$8.99 / $29.99",
+            description: `Compleja nariz de grosella negra, mora y violeta con trazas de pimienta y vainilla. Sabroso en boca, con notas tostadas.
+            `,
+            options: ["Copa - ", "Botella"]
+        },
+        {
+            name: `Sangría Blanca y Roja
+            `,
+            price: "$8.99",
+            description: `Una sabrosa combinación hecha en casa con brandy y frutas frescas, servida sobre hielo.
+            `,
+            options: []
+        },
     ],
     Cócteles: [
         {
             name: `Mojito
             `,
             price: "$8.99",
-            description: `Bacardi Superior Rum combined with sugar cane, lime juice, soda water and mint leaves
+            description: `Ron Bacardi Superior combinado con azúcar de caña, jugo de lima, agua mineral y hojas de menta
             `,
             options: []
-        }
+        },
+        {
+            name: `Caipirinha
+            `,
+            price: "$8.99",
+            description: `Cachaça (licor de caña de azúcar) combinado con lima fresca y azúcar
+            `,
+            options: []
+        },
+        {
+            name: `Pisco Sour
+            `,
+            price: "$8.99",
+            description: `Pisco (aguardiente de uva) combinado con jugo de limón y clara de huevo batida
+            `,
+            options: []
+        },
+        {
+            name: `Grand Margarita
+            `,
+            price: "$10.99",
+            description: `Tequila Conquistador combinado con triple seco y lima. En las rocas o congelado, con o sin borde de sal.
+            `,
+            options: ["De alta calidad +$3 - ", "En las rocas - ", "Congelado - ", "Con borde de sal - ", "Sin borde de sal"]
+        },
+        {
+            name: `Margarita Pequeño
+            `,
+            price: "$7.99",
+            description: `Una versión más pequeña de nuestra Grand Margarita
+            `,
+            options: ["En las rocas - ", "Congelado - ", "Con borde de sal - ", "Sin borde de sal"]
+        },
     ],
     "Especiales de Otoño": [
         {
             name: `Tequila Orange Crush
             `,
             price: "$9.99",
-            description: `Casamigos Reposado Tequila combined with orange juice, triple-sec and a splash of lemon-lime soda.
+            description: `Tequila Reposado Casamigos combinado con jugo de naranja, triple sec y un chorrito de soda de limón y lima.
             `,
-            options: ["Also available with Blanco Tequila"]
-        }
+            options: ["También disponible con Tequila Blanco"]
+        },
+        {
+            name: `Patron Paloma
+            `,
+            price: "$8.99",
+            description: `Tequila Silver Patron combinado con jugo de toronja, jugo de lima y dos gajos de limón.
+            `,
+            options: []
+        },
+        {
+            name: `Margarita de Manzana Especiada
+            `,
+            price: "$9.99",
+            description: `Tequila Reposado Casamigos combinado con sidra de manzana, jugo de limón fresco y néctar de agave. Decorado con un toque de canela.
+            `,
+            options: []
+        },
+        {
+            name: `Mula de Mezcal
+            `,
+            price: "$8.99",
+            description: `Mezcal El Silencio combinado con cerveza de jengibre y jugo de lima.
+            `,
+            options: []
+        },
+        {
+            name: `Fashion de Añejo
+            `,
+            price: "$10.99",
+            description: `Tequila Añejo Casamigos combinado con jarabe simple y amargos de Angostura.
+            `,
+            options: []
+        },
     ],
     Cervezas: [
         {
@@ -370,16 +514,104 @@ export const menuDrinksSpanishData = {
             description: `
             `,
             options: []
-        }
+        },
+        {
+            name: `Corona
+            `,
+            price: "$4.75",
+            description: `
+            `,
+            options: []
+        },
+        {
+            name: `Corona Light
+            `,
+            price: "$4.75",
+            description: `
+            `,
+            options: []
+        },
+        {
+            name: `Dos Equis Lager
+            `,
+            price: "$4.75",
+            description: `
+            `,
+            options: []
+        },
+        {
+            name: `Dos Equis Amber
+            `,
+            price: "$4.75",
+            description: `
+            `,
+            options: []
+        },
+        {
+            name: `Pacifico
+            `,
+            price: "$4.75",
+            description: `
+            `,
+            options: []
+        },
+        {
+            name: `Tecate
+            `,
+            price: "$4.75",
+            description: `
+            `,
+            options: []
+        },
+        {
+            name: `Modelo Especial
+            `,
+            price: "$4.75",
+            description: `
+            `,
+            options: []
+        },
+        {
+            name: `Modelo Negra
+            `,
+            price: "$4.75",
+            description: `
+            `,
+            options: []
+        },
     ],
     "Refrescos": [
         {
-            name: `Coca
+            name: `Coca-Cola
             `,
             price: "$1.95",
             description: `
             `,
             options: []
-        }
+        },
+        {
+            name: `Diet Coca-Cola
+            `,
+            price: "$1.95",
+            description: `
+            `,
+            options: []
+        },
+        {
+            name: `Sprite
+            `,
+            price: "$1.95",
+            description: `
+            `,
+            options: []
+        },
+        {
+            name: `Limonada Rosada
+            `,
+            price: "$1.95",
+            description: `
+            `,
+            options: []
+        },
     ]
 };
