@@ -5,9 +5,9 @@ import './DrinksMenu.css';
 
 export default function DrinksMenu() {
     const sectionRefsDrinks = {};
-
     const { currentLanguage, setCurrentLanguage } = useLanguage();
     const content = currentLanguage === 'english' ? englishContent : spanishContent;
+    const menuData = currentLanguage === 'english' ? menuDrinksEnglishData : menuDrinksSpanishData;
 
     const renderMenuItem = (section, item) => (
 
@@ -36,14 +36,12 @@ export default function DrinksMenu() {
             <h2 className='menu-header'>{content.drinkMenu}</h2>
             <div className='drinksMenu'>
                 <DrinksMenuNav sectionRefsDrinks={sectionRefsDrinks} />
+                {Object.keys(menuData).map((section) => (
+                    // <div key={section} className='menu-section' ref={(el) => (sectionRefsDrinks[section] = el)}>
+                    <div key={section} className='menu-section' ref={(el) => (sectionRefsDrinks[section] = el)} id={section.toLowerCase().replace(' ', '-')}>
 
-                {/* if state is currently in english, iterate through menuDrinksEnglishData, if not, iterate through menuDrinksSpanishData */}
-
-
-                {Object.keys(menuDrinksEnglishData).map((section) => (
-                    <div key={section} className='menu-section' ref={(el) => (sectionRefsDrinks[section] = el)}>
                         <h2 className='section-header'>{section}</h2>
-                        {menuDrinksEnglishData[section].map((item) => renderMenuItem(section, item))}
+                        {menuData[section].map((item) => renderMenuItem(section, item))}
                     </div>
                 ))}
 

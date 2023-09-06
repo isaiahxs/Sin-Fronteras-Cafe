@@ -296,43 +296,43 @@ export const menuEnglishData = {
     ]
 };
 
-export const demoEnglishData = {
-    Appetizers: [
-        {
-            name: "Guacamole",
-            price: "$10.99",
-            description: `A generous serving of fresh homemade guacamole with fresh cilantro, tomato, onion, and jalapeños. Served with a warm corn tortilla chip.
-            `,
-            options: ["No Spicy - ", "Med Spicy - ", "Spicy"]
-        }
-    ],
-    Salads: [
-        {
-            name: `Acapulco Salad`,
-            price: "$19.99",
-            description: `Grilled and blackened filet of salmon, paired up with baby greens, tomatoes, cucumber, Monterey cheese, and avocado. Tossed with homemade raspberry chipotle vinaigrette dressing.
-        `,
-            options: []
-        }
-    ],
-    Entrees: [
-        {
-            name: `Baleada (2)`,
-            price: "$11.99",
-            description: `A Honduran specialty. Two tortillas, stuffed with refried beans, fresh grated cheese, avocado, and imported Honduras cream. Choice of carne asada (steak) or chorizo with egg.`,
-            options: ["Beef - ", "Chorizo with Egg"]
-        }
-    ],
-    Desserts: [
-        {
-            name: `Flan Latino`,
-            price: "$5.99",
-            description: `With House-Made Caramel Sauce.
-            `,
-            options: []
-        }
-    ]
-};
+// export const demoEnglishData = {
+//     Appetizers: [
+//         {
+//             name: "Guacamole",
+//             price: "$10.99",
+//             description: `A generous serving of fresh homemade guacamole with fresh cilantro, tomato, onion, and jalapeños. Served with a warm corn tortilla chip.
+//             `,
+//             options: ["No Spicy - ", "Med Spicy - ", "Spicy"]
+//         }
+//     ],
+//     Salads: [
+//         {
+//             name: `Acapulco Salad`,
+//             price: "$19.99",
+//             description: `Grilled and blackened filet of salmon, paired up with baby greens, tomatoes, cucumber, Monterey cheese, and avocado. Tossed with homemade raspberry chipotle vinaigrette dressing.
+//         `,
+//             options: []
+//         }
+//     ],
+//     Entrees: [
+//         {
+//             name: `Baleada (2)`,
+//             price: "$11.99",
+//             description: `A Honduran specialty. Two tortillas, stuffed with refried beans, fresh grated cheese, avocado, and imported Honduras cream. Choice of carne asada (steak) or chorizo with egg.`,
+//             options: ["Beef - ", "Chorizo with Egg"]
+//         }
+//     ],
+//     Desserts: [
+//         {
+//             name: `Flan Latino`,
+//             price: "$5.99",
+//             description: `With House-Made Caramel Sauce.
+//             `,
+//             options: []
+//         }
+//     ]
+// };
 
 export const menuSpanishData = {
     Aperitivos: [

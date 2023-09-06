@@ -5,10 +5,10 @@ import { englishContent, spanishContent, menuEnglishData, menuSpanishData } from
 import './FoodMenu.css';
 
 export default function FoodMenu() {
+    const sectionRefs = {};
     const { currentLanguage, setCurrentLanguage } = useLanguage();
     const content = currentLanguage === 'english' ? englishContent : spanishContent;
     const menuData = currentLanguage === 'english' ? menuEnglishData : menuSpanishData;
-    const sectionRefs = {};
 
     const renderMenuItem = (section, item) => (
         <div key={item.name} className='menu-item'>

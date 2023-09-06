@@ -312,3 +312,74 @@ export const menuDrinksEnglishData = {
         },
     ]
 };
+
+
+
+
+
+
+
+
+
+export const menuDrinksSpanishData = {
+    "White Wines": [
+        {
+            name: `Oyster Bay Rosé
+            `,
+            price: "$7.50 / $24.00",
+            description: `Oyster Bay's cool climate Marlborough Rosé exudes summer cherry and fragrant blossom notes with a burst of red berries and a lively citrus zest.
+            `,
+            options: ["Glass - ", "Bottle"]
+        }
+    ],
+    "Red Wines": [
+        {
+            name: `Old Soul Cabernet
+            `,
+            price: "$7.99 / $24.99",
+            description: `In this wine you will find purity and elegance, red berry fruit, black cherry, licorice and black pepper all wrapped together with hints of vanilla notes.
+            `,
+            options: ["Glass - ", "Bottle"]
+        }
+    ],
+    Cocktails: [
+        {
+            name: `Mojito
+            `,
+            price: "$8.99",
+            description: `Bacardi Superior Rum combined with sugar cane, lime juice, soda water and mint leaves
+            `,
+            options: []
+        }
+    ],
+    "Fall Specials": [
+        {
+            name: `Tequila Orange Crush
+            `,
+            price: "$9.99",
+            description: `Casamigos Reposado Tequila combined with orange juice, triple-sec and a splash of lemon-lime soda.
+            `,
+            options: ["Also available with Blanco Tequila"]
+        }
+    ],
+    Beers: [
+        {
+            name: `Coors Light
+            `,
+            price: "$4.75",
+            description: `
+            `,
+            options: []
+        }
+    ],
+    "Soft Drinks": [
+        {
+            name: `Coke
+            `,
+            price: "$1.95",
+            description: `
+            `,
+            options: []
+        }
+    ]
+};
