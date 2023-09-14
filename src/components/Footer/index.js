@@ -53,12 +53,14 @@ export default function Footer() {
                                 </a>
                             </li>
                             <li>
-                                <div className='footer-icon-container'>
-                                    <img src={phone} className='footer-icon' alt='Phone Icon' />
-                                    <p className='footer-icon-description'>
-                                        <a href='tel:+14102660013'>(410) 266-0013</a>
-                                    </p>
-                                </div>
+                                <a href='tel:+14102660013'>
+                                    <div className='footer-icon-container'>
+                                        <img src={phone} className='footer-icon' alt='Phone Icon' />
+                                        <p className='footer-icon-description'>
+                                            (410) 266-0013
+                                        </p>
+                                    </div>
+                                </a>
                             </li>
                             <li>
                                 <div className='footer-icon-container'>

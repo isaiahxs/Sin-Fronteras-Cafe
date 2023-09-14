@@ -29,6 +29,8 @@
     /* bottom: 10; */
     z-index: 10;
     background-color: rgba(0, 0, 0, 0.8);
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .up {
@@ -75,18 +77,20 @@
     }
 }
 
-@media screen and (max-width: 495px) {
-    .menu-nav.sticky {
-        top: 63px;
-        padding-top: 10px;
-        padding-bottom: 10px;
-    }
-}
-
 @media screen and (min-width: 495px) {
     .menu-nav.sticky {
         top: 80px;
-        padding-top: 10px;
-        padding-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 495px) {
+    .menu-nav.sticky {
+        top: 63px;
+    }
+}
+
+@media screen and (max-width: 391px) {
+    .menu-nav.sticky {
+        top: 80px;
     }
 }
