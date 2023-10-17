@@ -28,18 +28,18 @@ export default function Hero() {
         <header className='hero-container' id='hero'>
             <div className='nav-placeholder'></div>
             <div className='hero-section'>
-                <div className='hero-information'>
+                <div className='hero-information fade-in'>
                     <img src={fajitas} className='hero-background' alt='Fajitas Background' />
                     <div className='hero-text-section hero-contact-section'>
                         <div className='hero-text-section'>
-                            <h1 className='title overlay'>{content.title}</h1>
-                            <h2 className='location overlay'>{content.location}</h2>
+                            <h1 className='title overlay fade-in'>{content.title}</h1>
+                            <h2 className='location overlay fade-in'>{content.location}</h2>
                         </div>
                     </div>
                 </div>
 
                 <div className='section-below-hero'>
-                    <div className='hero-descriptions-container'>
+                    <div className='hero-descriptions-container fade1'>
 
                         {/* <div className='hero-header-section'> */}
                         {/* <h1 className='title'>{content.title}</h1> */}
@@ -90,10 +90,18 @@ export default function Hero() {
                         </h3>
                     </div>
 
-                    <div className='hero-buttons-container'>
-                        <button className='view-services-hero' onClick={() => scrollToSection('food-menu')}>
-                            {content.viewServices}
+                    <div className='hero-buttons-container fade2'>
+                        <button className='view-food-hero' onClick={() => scrollToSection('food-menu')}>
+                            {content.viewFood}
                         </button>
+
+                        <button className='view-drinks-hero' onClick={() => scrollToSection('drink-menu')}>
+                            {content.viewDrinks}
+                        </button>
+
+                        {/* <button className='view-services-hero' onClick={() => scrollToSection('food-menu')}>
+                            {content.viewServices}
+                        </button> */}
 
                         <button className='view-reviews-hero' onClick={() => scrollToSection('reviews')}>
                             {content.viewReviews}

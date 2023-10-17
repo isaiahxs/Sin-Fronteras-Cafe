@@ -9,6 +9,8 @@ export const englishContent = {
 
     hours: 'Monday - Saturday: 11:00am to 9:00pm',
     hoursSunday: 'Sunday: 11:00am to 8:00pm',
+    viewFood: 'View Food Menu',
+    viewDrinks: 'View Drinks Menu',
     viewServices: 'View Menu',
     viewReviews: 'View Reviews',
     leaveReview: 'Rate Your Visit!',
@@ -22,6 +24,8 @@ export const spanishContent = {
     description2: '¡Disfruta del sabor de América Latina con nuestras recetas auténticas y margaritas famosas!',
     hours: 'Lunes - Sábado: 11:00am a 9:00pm',
     hoursSunday: 'Domingo: 11:00am a 8:00pm',
+    viewFood: 'Ver Menú de Comida',
+    viewDrinks: 'Ver Menú de Bebidas',
     viewServices: 'Ver Menú',
     viewReviews: 'Ver Testimonios',
     leaveReview: '¡Califique su Visita!',

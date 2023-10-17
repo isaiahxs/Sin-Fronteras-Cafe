@@ -1,0 +1,21 @@
+.body-fade-in {
+    opacity: 0;
+    transform: translateY(25px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.body-fade-in.show {
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.footer-fade-in {
+    opacity: 0;
+    transform: translateY(0px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.footer-fade-in.show {
+    opacity: 1;
+    transform: translateY(0px);
+}
