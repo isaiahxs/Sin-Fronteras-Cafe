@@ -93,7 +93,7 @@
 }
 
 .nav-placeholder {
-    height: 73px !important;
+    height: 85px;
 }
 
 .hero-header-section {
@@ -172,6 +172,8 @@
 }
 
 .description {
+    max-width: 600px;
+    line-height: 1.8rem;
     margin-top: 10px;
     margin-bottom: 0px;
 }
@@ -189,6 +191,7 @@
 }
 
 .contact-information {
+    line-height: 1.8rem;
     margin-top: 10px;
     margin-bottom: 10px;
 }
@@ -267,6 +270,7 @@
     text-align: center;
     max-width: 700px;
     margin: auto;
+    padding: 10px;
 }
 
 .welcome {
@@ -278,7 +282,7 @@
 
 @media screen and (min-width: 495px) {
     .nav-placeholder {
-        height: 95px !important;
+        height: 105px;
     }
 }
 

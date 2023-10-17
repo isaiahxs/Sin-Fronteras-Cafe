@@ -63,6 +63,8 @@ button {
   font-weight: bold;
   transition: 0.7s all;
   font-family: 'Inknut Antiqua', serif;
+  line-height: 2.3rem;
+
   /* font-family: 'Vollkorn SC', serif; */
 }
 

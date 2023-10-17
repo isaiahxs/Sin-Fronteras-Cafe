@@ -19,7 +19,7 @@ export default function Hero() {
 
     const scrollToSection = (sectionId) => {
         const sectionElement = document.getElementById(sectionId);
-        const yOffset = -110;
+        const yOffset = -90;
         const topOffset = sectionElement.getBoundingClientRect().top + window.scrollY + yOffset;
         window.scrollTo({ top: topOffset, behavior: 'smooth' });
     };
@@ -28,7 +28,7 @@ export default function Hero() {
         <header className='hero-container' id='hero'>
             <div className='nav-placeholder'></div>
             <div className='hero-section'>
-                <div className='hero-information fade-in'>
+                <div className='hero-information'>
                     <img src={fajitas} className='hero-background' alt='Fajitas Background' />
                     <div className='hero-text-section hero-contact-section'>
                         <div className='hero-text-section'>

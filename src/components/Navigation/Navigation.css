@@ -127,6 +127,22 @@
     }
 }
 
+@media screen and (max-width: 392px) {
+    .nav-bar {
+        padding: 15px 0px;
+    }
+
+    .nav-logo-container {
+        width: 90px;
+    }
+
+    .nav-name {
+        font-size: 1.0rem;
+        width: 180px;
+    }
+}
+
+
 
 /* nav panel */
 .nav-panel {

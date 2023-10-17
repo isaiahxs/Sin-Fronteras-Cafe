@@ -3,6 +3,7 @@
     /* background-color: #222222; */
     background-color: black;
     /* background-color: #38383b; */
+    /* margin: 10px; */
 }
 
 .footer-section {
@@ -36,6 +37,7 @@
 
 
 .footer-options-container {
+    line-height: 1.8rem;
     /* margin-right: 10px; */
 }
 
@@ -73,6 +75,7 @@
 .footer-heading {}
 
 .footer-options {
+    line-height: 1.8rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -108,10 +111,11 @@
 }
 
 .credits-container {
+    line-height: 1.8rem;
     display: flex;
     justify-content: center;
     color: white;
-    padding-bottom: 20px;
+    padding-bottom: 30px;
     /* font-size: 1.0rem; */
     margin-left: 10px;
     margin-right: 10px;
@@ -151,9 +155,7 @@
     }
 
     .footer-options-container {
-        margin-top: 10px;
-        margin-bottom: 0px;
-        margin-right: 0px;
+        /* margin: 10px; */
     }
 
     .footer-options {

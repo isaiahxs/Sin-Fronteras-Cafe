@@ -7,6 +7,7 @@ import christine from '../../assets/testimonial-images/christine.png';
 
 export const englishContent = {
     testimonialsHeader: "Real Reviews",
+    testimonialsSubheader: "Scroll on review text to read more",
     rateYourVisitButton: "Rate Your Visit!",
     testimonials: [
         {
@@ -62,6 +63,7 @@ export const englishContent = {
 
 export const spanishContent = {
     testimonialsHeader: "Testimonios Auténticos",
+    testimonialsSubheader: "Desplácese sobre el texto de la reseña para leer más",
     rateYourVisitButton: "¡Califique Su Visita!",
     testimonials: [
         {

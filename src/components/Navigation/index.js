@@ -85,7 +85,7 @@ export default function Navigation() {
         if (sectionId === 'footer') {
             sectionElement.scrollIntoView({ behavior: 'smooth', block: 'end' });
         } else {
-            const yOffset = -110;
+            const yOffset = -100;
             const topOffset = sectionElement.getBoundingClientRect().top + window.scrollY + yOffset;
             window.scrollTo({ top: topOffset, behavior: 'smooth' });
             // sectionElement.scrollIntoView({ behavior: 'smooth' });
@@ -120,6 +120,12 @@ export default function Navigation() {
 
                     <div className='panel-buttons'>
                         <div>
+                            <button className='language-toggle-button panel-language-button' onClick={toggleLanguage}>
+                                {currentLanguage === 'english' ? 'Español' : 'English'}
+                            </button>
+                        </div>
+
+                        <div>
                             <button className='nav-button panel-button' onClick={() => scrollToSection('food-menu')}>
                                 {content.foodMenu}
                             </button>
@@ -140,12 +146,6 @@ export default function Navigation() {
                         <div>
                             <button className='nav-button panel-button' onClick={() => scrollToSection('footer')}>
                                 {content.contact}
-                            </button>
-                        </div>
-
-                        <div>
-                            <button className='language-toggle-button panel-language-button' onClick={toggleLanguage}>
-                                {currentLanguage === 'english' ? 'Español' : 'English'}
                             </button>
                         </div>
 
