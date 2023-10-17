@@ -85,7 +85,7 @@ export default function Navigation() {
         if (sectionId === 'footer') {
             sectionElement.scrollIntoView({ behavior: 'smooth', block: 'end' });
         } else {
-            const yOffset = -90;
+            const yOffset = -100;
             const topOffset = sectionElement.getBoundingClientRect().top + window.scrollY + yOffset;
             window.scrollTo({ top: topOffset, behavior: 'smooth' });
             // sectionElement.scrollIntoView({ behavior: 'smooth' });
@@ -99,15 +99,15 @@ export default function Navigation() {
     return (
         <nav className='nav-bar'>
             <div className='nav-options'>
-                <div className='nav-logo-container'>
+                <div className='nav-logo-container fade-in'>
                     <img src={logo} className='small-logo' alt="Sin Fronteras Logo" onClick={() => scrollToTop()} />
                 </div>
 
-                <div className='nav-name'>
+                <div className='nav-name fade-in'>
                     Sin Fronteras Cafe
                 </div>
 
-                <div className='nav-logo-container'>
+                <div className='nav-logo-container fade-in'>
                     <button className='hamburger-menu' onClick={toggleNavOpen}>
                         <img src={hamburger} className='small-logo' alt='Hamburger Menu' />
                     </button>
@@ -119,6 +119,12 @@ export default function Navigation() {
                     <button className='x-button' onClick={toggleNavOpen}>X</button>
 
                     <div className='panel-buttons'>
+                        <div>
+                            <button className='language-toggle-button panel-language-button' onClick={toggleLanguage}>
+                                {currentLanguage === 'english' ? 'Español' : 'English'}
+                            </button>
+                        </div>
+
                         <div>
                             <button className='nav-button panel-button' onClick={() => scrollToSection('food-menu')}>
                                 {content.foodMenu}
@@ -140,12 +146,6 @@ export default function Navigation() {
                         <div>
                             <button className='nav-button panel-button' onClick={() => scrollToSection('footer')}>
                                 {content.contact}
-                            </button>
-                        </div>
-
-                        <div>
-                            <button className='language-toggle-button panel-language-button' onClick={toggleLanguage}>
-                                {currentLanguage === 'english' ? 'Español' : 'English'}
                             </button>
                         </div>
 

@@ -15,7 +15,7 @@
     font-size: 2.5rem;
     margin-bottom: 10px;
     margin-top: 10px;
-    line-height: 4.5rem;
+    line-height: 4.0rem;
 }
 
 .item-name-and-price {
@@ -59,6 +59,7 @@
 } */
 
 .item-description {
+    line-height: 1.8rem;
     margin-top: 0px;
     margin-bottom: 0px;
 }
@@ -81,6 +82,7 @@
     margin-bottom: 0px;
     text-align: center;
     margin-top: 20px;
+    line-height: 3.6rem;
 }
 
 .item-options {
